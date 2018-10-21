@@ -262,6 +262,7 @@
                 </div>
             </div>
         </div>
+        <!--TOP HOTEL-->
         <div class="hotel">
             <div class="hotel-info">
                 <div class="hotel-info-text">
@@ -271,6 +272,61 @@
             <div class="top-hotel row mx-5" id="list-hotel">
                 <list-hotel v-for="h in hotel" v-bind:item="h" v-bind:key="h.name">
                 </list-hotel>
+            </div>
+        </div>
+        <!--TOP FOOD-->
+        <div class="food">
+            <div class="top-food">
+                <div class="row">
+                    <div class="food-intro col-md-5">
+                        <span>AMAZING THINGS IN PHU QUOC</span>
+                        <h3>Food & Restaurant Guide</h3>
+                        <P>
+                            Không chỉ gây ấn tượng bởi những thiên đường đảo đẹp ngất ngây, du khách đến đây còn được
+                            thưởng thức vô vàn những món ăn ngon, hấp dẫn. Đặc biệt, trong đó có rất nhiều món đặc sản
+                            mà bạn không có nhiều cơ hội ăn ở những vùng biển khác. Hãy xem những món ăn ở Phú Quốc có
+                            gì đặc sắc để khám phá và nhớ "ăn sập Phú Quốc" nhé!
+                        </P>
+                    </div>
+                    <div class="food-image col-md-7">
+                        <div id="food-slide" class="carousel slide" data-ride="carousel">
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="asset/bun-muc.jpg" alt="" class="style-item">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/sea-food.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                        <img src="asset/steamed-mantis-shrimp.jpg" alt="">
+                                    </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#food-slide" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#food-slide" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--FOOTER-->
+        <div class="footer-section">
+            <div class="footer-info">
+                <h2>Let's travel together!</h2>
+            </div>
+            <div class="footer-icon">
+                <i class="fa fa-facebook-square m-3"></i>
+                <i class="fa fa-instagram m-3"></i>
+                <i class="fa fa-twitter-square m-3"></i>
+                <i class="fa fa-google-plus-square m-3"></i>
+                <i class="fa fa-dribbble m-3"></i>
             </div>
         </div>
     </div>
@@ -295,11 +351,11 @@
     //Resize banner slider
     var _window = $(window);
     var _heightwindow = _window.height();
-    $(".carousel-item img").css("height", _heightwindow);
+    $("#demo .carousel-item").css("height", _heightwindow);
     $(window).resize(function () {
         var _window = $(window);
         var _heightwindow = _window.height();
-        $(".carousel-item img").css("height", _heightwindow);
+        $("#demo .carousel-item").css("height", _heightwindow);
     })
 
     $(document).ready(function () {
