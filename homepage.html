@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Phu Quoc Travel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/homepage-style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/component.js"></script>
+    <script src="js/data.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <!--HEADER-->
+        <div class="header position-relative">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="asset/slide-homepage1.jpg" alt="" class="style-item">
+                        <div class="carousel-caption custom-carousel-caption">
+                            <h1>Phu Quoc</h1>
+                            <p>travel</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/slide-homepage3.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/slide-homepage2.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="asset/slide-homepage4.jpg" alt="">
+                    </div>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div class="topbar-menu py-5">
+                <div class="topbar-content w-75 mx-auto d-flex">
+                    <div class="fade-topbar-background"></div>
+                    <div class="logo w-25" style="z-index: 1">
+                        <img src="asset/beach.png" alt="">
+                    </div>
+                    <div class="menu d-flex flex-row w-75 justify-content-end text-white align-items-center" style="z-index: 1">
+                        <a class="menu-item">HOME</a>
+                        <a class="menu-item">ABOUT US</a>
+                        <a class="menu-item">OFFER</a>
+                        <a class="menu-item">NEWS</a>
+                        <a class="menu-item">CONTACT</a>
+                    </div>
+                </div>
+            </div>
+            <!--Search Tab-->
+            <div class="search-tab-container">
+                <ul class="nav nav-tabs search-tab d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-lg-center justify-content-start mb-0">
+                    <li class="nav-item search-tab-item">
+                        <a class="nav-link search-tab-trip style-search-tab d-flex justify-content-center align-items-center active"
+                            href="#trips" data-toggle="tab">
+                            <img src="asset/travel.png" alt="" class="mr-3">
+                            <span>TRIPS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item search-tab-item">
+                        <a class="nav-link search-tab-food style-search-tab d-flex justify-content-center align-items-center"
+                            href="#foods" data-toggle="tab">
+                            <img src="asset/food.png" alt="" class="mr-3">
+                            <span>FOODS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item search-tab-item">
+                        <a class="nav-link search-tab-hotel style-search-tab d-flex justify-content-center align-items-center"
+                            href="#hotels" data-toggle="tab">
+                            <img src="asset/bed.png" alt="" class="mr-3">
+                            <span>HOTELS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item search-tab-item">
+                        <a class="nav-link search-tab-car-rentals style-search-tab d-flex justify-content-center align-items-center"
+                            href="#car-rentals" data-toggle="tab">
+                            <img src="asset/bus.png" alt="" class="mr-3">
+                            <span>CAR RENTALS</span>
+                        </a>
+                    </li>
+                    <li class="nav-item search-tab-item">
+                        <a class="nav-link search-tab-cruises style-search-tab d-flex justify-content-center align-items-center"
+                            href="#cruises" data-toggle="tab">
+                            <img src="asset/boat.png" alt="" class="mr-3">
+                            <span>CRUISES</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <!--BODY-->
+        <!--SEARCH-->
+        <div class="tab-content">
+            <!--SEARCH LOCATION-->
+            <div class="tab-pane active search-parnel" id="trips">
+                <form action="" class="d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-center justify-content-start mx-auto h-100">
+                    <div class="search-name d-flex flex-column justify-content-lg-center">
+                        <div>DESTINATION</div>
+                        <input type="text" class="form-control search-style-input">
+                    </div>
+                    <div class="find-item search-name">
+                        <div>LOCATION</div>
+                        <select name="location" id="" class="form-control search-style-input">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                            <option value="">Dương Đông</option>
+                            <option value="">Hàm Nghi</option>
+                        </select>
+                    </div>
+                    <button class="button-search search-name">
+                        search
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!--SEARCH FOOD-->
+            <div class="tab-pane search-parnel" id="foods">
+                <form action="" class="d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-center justify-content-start mx-auto h-100">
+                    <div class="search-name d-flex flex-column justify-content-lg-center">
+                        <div>FOODS</div>
+                        <input type="text" class="form-control search-style-input">
+                    </div>
+                    <div class="find-item search-name">
+                        <div>LOCATION</div>
+                        <select name="location" id="" class="form-control search-style-input">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                            <option value="">Dương Đông</option>
+                            <option value="">Hàm Nghi</option>
+                        </select>
+                    </div>
+                    <button class="button-search search-name">
+                        search
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!--SEARCH HOTEL-->
+            <div class="tab-pane search-parnel" id="hotels">
+                <form action="" class="d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-center justify-content-start mx-auto h-100">
+                    <div class="search-name d-flex flex-column justify-content-lg-center">
+                        <div>HOTEL</div>
+                        <input type="text" class="form-control search-style-input-hotel">
+                    </div>
+                    <div class="find-item search-name">
+                        <div>LOCATION</div>
+                        <select name="location" id="" class="form-control search-style-input-hotel">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                            <option value="">Dương Đông</option>
+                            <option value="">Hàm Nghi</option>
+                        </select>
+                    </div>
+                    <div class="find-item search-name">
+                        <div>LOW PRICE</div>
+                        <select name="location" id="" class="form-control search-style-input-hotel">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                        </select>
+                    </div>
+                    <div class="find-item search-name">
+                        <div>HIGH PRICE</div>
+                        <select name="location" id="" class="form-control search-style-input-hotel">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                        </select>
+                    </div>
+                    <button class="button-search search-name">
+                        search
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!--SEARCH CAR RENTAILS-->
+            <div class="tab-pane search-parnel" id="car-rentals">
+                <form action="" class="d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-center justify-content-start mx-auto h-100">
+                    <div class="find-item search-name">
+                        <div>TYPE</div>
+                        <select name="location" id="" class="form-control search-style-input">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                        </select>
+                    </div>
+                    <div class="find-item search-name">
+                        <div>LOCATION</div>
+                        <select name="location" id="" class="form-control search-style-input">
+                            <div>DESTINATION</div>
+                            <option value="">Tất cả</option>
+                            <option value="">Dương Đông</option>
+                            <option value="">Hàm Nghi</option>
+                        </select>
+                    </div>
+                    <button class="button-search search-name">
+                        search
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </form>
+            </div>
+            <!--SEARCH CRUISES-->
+            <div class="tab-pane" id="cruises-rentals">
+
+            </div>
+        </div>
+
+        <!--TOP DESTINATION-->
+        <div class="body" id="body-homepage">
+            <div class="top-destinations">
+                <div class="swaper-text">
+                    <div class="section-tile">
+                        <div>SIMPLY AMAZING PLACE</div>
+                        <div class="style-text-popular-destination">
+                            <span>Popular Destinations</span>
+                        </div>
+
+                    </div>
+                    <div class="top-content row mx-5" id="top-destinations">
+                        <top-destination v-for="item in topDestinations" v-bind:item="item">
+                        </top-destination>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--VIDEO INTRO-->
+        <div class="intro position-relative">
+            <div class="intro-background ">
+                <div class="fade"></div>
+            </div>
+            <div class="intro-video position-absolute">
+                <div class="intro-video-background d-flex align-items-center justify-content-center">
+                    <a href="" class="popup-video">
+                        <i class="fa fa-video-camera d-flex align-items-center justify-content-center my-50"
+                            aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="hotel">
+        <div class="hotel-info">
+            <div class="hotel-info-text">
+                <span>The Best Offer With Room</span>
+            </div>
+        </div>
+        <div class="top-hotel row" id="list-hotel">
+            <list-hotel v-for="h in hotel" v-bind:item="h" v-bind:key="h.name">
+            </list-hotel>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
+<script>
+    //Vue JS
+    var destinations = new Vue({
+            el: "#top-destinations",
+            data: {
+                topDestinations: topDestinations
+            }
+        }),
+        hotels = new Vue({
+            el: "#list-hotel",
+            data: {
+                hotel: hotel
+            }
+        })
+
+    //Resize banner slider
+    var _window = $(window);
+    var _heightwindow = _window.height();
+    $(".carousel-item img").css("height", _heightwindow);
+    $(window).resize(function () {
+        var _window = $(window);
+        var _heightwindow = _window.height();
+        $(".carousel-item img").css("height", _heightwindow);
+    })
+
+    $(document).ready(function () {
+        //hover icon-note
+        var iconNote = $(".icon-note");
+        iconNote.mouseover(function () {
+            $(this).find('.note-hover').css('display', 'block');
+        });
+        iconNote.mouseleave(function () {
+            $(this).find('.note-hover').css('display', 'none');
+        });
+
+        $(window).scroll(function () {
+            var x = $(this).scrollTop();
+            var intro = $(".intro").offset().top;
+            $('.intro-background').css('background-position', '0% ' + parseInt((x - intro) / 2) + 'px');
+        });
+    })
+</script>
