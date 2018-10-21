@@ -400,7 +400,7 @@
     background: #fff;
     border-radius: 50%;
     margin: auto;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .popup-video i{
@@ -433,9 +433,17 @@
     margin-top: 82px;
 }
 
+.hotel-information-wapper{
+    width: 50%;
+}
+.hotel-images-wapper {
+    width: 45%;
+    margin-right: 5%;
+}
+
 .hotel-item-image img{
-   width: 350px;
-   height: 450px;
+   width: 100%;
+   height: auto;
 }
 .hotel-name{
     position: absolute;
@@ -474,9 +482,6 @@
 .standard-icon{
     margin-top: 16px;
     display: flex;
-}
-.style-intro-button{
-    margin-top: 55px;
 }
 .icon-note{
     position: relative;

@@ -270,7 +270,7 @@
                 <span>The Best Offer With Room</span>
             </div>
         </div>
-        <div class="top-hotel row" id="list-hotel">
+        <div class="top-hotel row mx-5" id="list-hotel">
             <list-hotel v-for="h in hotel" v-bind:item="h" v-bind:key="h.name">
             </list-hotel>
         </div>
@@ -318,7 +318,7 @@
         $(window).scroll(function () {
             var x = $(this).scrollTop();
             var intro = $(".intro").offset().top;
-            $('.intro-background').css('background-position', '0% ' + parseInt((x - intro) / 2) + 'px');
+            $('.intro-background').css('background-position', '0% ' + parseInt((x - intro) / 2 - 180) + 'px');
         });
     })
 </script>

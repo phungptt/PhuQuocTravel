@@ -90,14 +90,14 @@ Vue.component('list-hotel', {
     props: ['item'],
     template: `
     <div class="hotel-item col-md-6">
-        <div class="row">
-            <div class="col-md-6">
+        <div class="d-flex">
+            <div class="hotel-images-wapper">
                 <div class="hotel-item-image position-relative">
                     <img v-bind:src="item.image" alt="">
                         <span class="hotel-name">{{item.name}}</span>
                 </div>
             </div>
-            <div class="col-md-6 float-left">
+            <div class="hotel-information-wapper">
                 <div class="hotel-item-content">
                     <div class="prices">
                         {{item.price}}
@@ -139,7 +139,7 @@ Vue.component('list-hotel', {
                             </div>
                         </div>                                                               
                     </div>
-                    <div class="intro-button style-intro-button">
+                    <div class="intro-button style-intro-button mt-4">
                         <div class="button-bcg "></div>
                         <a href="#">Xem thêm ...</a>
                     </div>
