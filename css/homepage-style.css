@@ -392,7 +392,7 @@
     background-image: url('../asset/video-intro-background.jpg');
     height: 350px;
     background-size: cover;
-    box-shadow: 0px 20px 71px -12px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 20px 71px -12px rgba(0, 0, 0, 0.7);
 }
 .popup-video{
     height: 90px;
@@ -401,6 +401,11 @@
     border-radius: 50%;
     margin: auto;
     text-decoration: none !important;
+    cursor: pointer;
+}
+
+.popup-video:hover{
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 .popup-video i{
@@ -411,6 +416,36 @@
     margin: auto;
     color: #FFDD00;
     margin-top: 30%;
+}
+
+.video-intro-play{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    height: 1000px;
+    width: 800px;
+}
+.video-intro-content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.videp-play video{
+    width: 100%;
+    height: auto;
+}
+
+.btn-close-video{
+    cursor: pointer;
+    color: #eee;
+    font-size: 2em;
+}
+
+.btn-close-video:hover{
+    color: #ddd;
 }
 /*HOTEL INFORMATION*/
 .hotel{
