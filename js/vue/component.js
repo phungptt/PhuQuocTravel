@@ -115,25 +115,25 @@ Vue.component('list-hotel', {
                     </div>
                     <div class="standard-icon">
                         <div class="icon-note">
-                            <img src="asset/wifi-connection-signal-symbol.png">
+                            <img src="asset/icon/wifi-connection-signal-symbol.png">
                             <div class="note-hover">
                                 Free wifi
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/sunbed.png">
+                            <img src="asset/icon/sunbed.png">
                             <div  class="note-hover">
                                 Gần biển
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/swimming-silhouette.png">
+                            <img src="asset/icon/swimming-silhouette.png">
                             <div class="note-hover">
                                 Hồ bơi
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/shuffer-bus.png">
+                            <img src="asset/icon/shuffer-bus.png">
                             <div class="note-hover">
                                 Đưa đón tại sân bay
                             </div>
