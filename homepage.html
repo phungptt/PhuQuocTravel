@@ -7,15 +7,19 @@
     <title>Phu Quoc Travel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="js/jquery-3.3.1.min.js"></script>
+
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/homepage-style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/vue/vue.js"></script>
     <script src="js/vue/component.js"></script>
     <script src="js/data.js"></script>
+    <script src="js/wow.min.js"></script>
 </head>
 
 <body>
@@ -28,8 +32,8 @@
                     <div class="carousel-item active">
                         <img src="asset/slide-homepage1.jpg" alt="" class="style-item">
                         <div class="carousel-caption custom-carousel-caption">
-                            <h1>Phu Quoc</h1>
-                            <p>travel</p>
+                            <h1 class="wow flipInX">Phu Quoc</h1>
+                            <p class="wow bounceInUp">travel</p>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -269,8 +273,8 @@
                 <div class="videp-play w-100">
                     <video id="video-intro" controls>
                         <source src="asset/PhuQuoc-intro.mp4" type="video/mp4">
-                      Your browser does not support the video tag.
-                      </video>
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </div>
         </div>
@@ -311,8 +315,8 @@
                                     <img src="asset/sea-food.jpg" alt="">
                                 </div>
                                 <div class="carousel-item">
-                                        <img src="asset/steamed-mantis-shrimp.jpg" alt="">
-                                    </div>
+                                    <img src="asset/steamed-mantis-shrimp.jpg" alt="">
+                                </div>
                             </div>
 
                             <!-- Left and right controls -->
@@ -358,17 +362,10 @@
             data: {
                 hotel: hotel
             }
-        })
-
-    //Resize banner slider
-    var _window = $(window);
-    var _heightwindow = _window.height();
-    $("#demo .carousel-item").css("height", _heightwindow);
-    $(window).resize(function () {
-        var _window = $(window);
-        var _heightwindow = _window.height();
-        $("#demo .carousel-item").css("height", _heightwindow);
-    })
+        });
+    
+    //WOW STYLE
+    new WOW().init();
 
     $(document).ready(function () {
         //hover icon-note
@@ -387,28 +384,40 @@
                 'px');
         });
 
-        //show video demo
-        var iconPlay = $(".popup-video"),
-            iconClose = $(".btn-close-video"),
-            videoPlay = $("#video-intro"),
-            topIconPlay = $(".intro").offset().top,
+        var _window = $(window),
+            heightwindow = _window.height(),
+            widthwindow = _window.width(),
+
+            iconPlay = $(".popup-video"),
             videoIntro = $(".video-intro-play"),
             contentVideoIntro = $(".video-intro-content"),
-            heightDocs = $(document).height(),
-            widthDocs = $(document).width();
+            videoPlay = $("#video-intro"),
+            iconClose = $(".btn-close-video");
 
-            videoIntro.css('height', heightDocs);
-            videoIntro.css('width', widthDocs);
-            contentVideoIntro.css('margin-top', parseInt(topIconPlay - 100) + 'px')
+        $("#demo .carousel-item").css("height", heightwindow);
+        videoIntro.css('height', heightwindow);
+        videoIntro.css('width', widthwindow);
 
-        iconPlay.on('click', function(){
+        iconPlay.on('click', function () {
             videoIntro.css('display', 'block');
             videoPlay.get(0).currentTime = 0;
             videoPlay.get(0).play()
         });
-        iconClose.on('click', function(){
+
+        iconClose.on('click', function () {
             videoPlay.get(0).pause()
             videoIntro.css('display', 'none');
-        })
-    })
+        });
+
+        $(window).resize(function () {
+            var _window = $(window),
+                heightwindow = _window.height(),
+                widthwindow = _window.width(),
+                videoIntro = $(".video-intro-play");
+
+            $("#demo .carousel-item").css("height", heightwindow);
+            videoIntro.css('height', heightwindow);
+            videoIntro.css('width', widthwindow);
+        });
+    });
 </script>

@@ -420,13 +420,12 @@
 
 .video-intro-play{
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    height: 1000px;
-    width: 800px;
+    background: rgba(0, 0, 0, .95);
+    animation: ease 2s;
 }
 .video-intro-content{
     width: 80%;
