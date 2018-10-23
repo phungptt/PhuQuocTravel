@@ -403,9 +403,11 @@
 
         iconPlay.on('click', function(){
             videoIntro.css('display', 'block');
+            videoPlay.get(0).currentTime = 0;
             videoPlay.get(0).play()
         });
         iconClose.on('click', function(){
+            videoPlay.get(0).pause()
             videoIntro.css('display', 'none');
         })
     })
