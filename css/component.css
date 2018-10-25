@@ -1,0 +1,53 @@
+/**TOPBAR**/
+.my-header {
+    background: #333;
+    width: 100%;
+}
+
+.topbar-logo h4 {
+    text-transform: uppercase;
+}
+
+.topbar-menu .menu-item {
+    margin-right: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.topbar-menu .menu-item:last-child {
+    margin-right: 0;
+}
+
+.topbar-menu .menu-item:hover {
+    color: #ddd;
+}
+
+/**FOOTER**/
+.my-footer {
+    background: #333;
+    width: 100%;
+}
+
+.footer-info h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-icon a {
+    color: white;
+}
+
+.footer-icon a:last-child i {
+    margin-right: 0 !important;
+}
+
+.copyright {
+    background: #333;
+    font-style: italic;
+    border-top: 1px solid #555;
+}
+
+.copyright a {
+    text-decoration: none;
+}

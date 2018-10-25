@@ -1,0 +1,38 @@
+.user-avatar {
+    width: 20%;
+}
+
+.user-avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.user-info {
+    width: 80%;
+}
+
+.pq-btn{
+    padding: .2em 1em;
+    border-radius: .125em;
+    border: 1px solid #ccc;
+    background: #eee;
+    text-align: center;
+    cursor: pointer;
+}
+.pq-btn:hover{
+    background: #ddd;
+}
+.btn-logout{
+    
+}
+.user-info-body td{
+    padding: .2em 1em .2em 0;
+}
+
+.nav-tabs .nav-item a{
+    border-radius: 0;
+}
+
+.nav-tabs .nav-item a.active, .nav-tabs .nav-item a:hover{
+    border-top: 2px solid #2196f3;
+}

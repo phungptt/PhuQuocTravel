@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Trang cá nhân</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="css/user.css">
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/component.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="profile-page" id="profile-page">
+            <my-header></my-header>
+            <div class="profile-wrapper w-75 mx-auto my-5">
+                <div class="profile-content">
+                    <div class="user-info-wrapper">
+                        <div class="user-info-content p-5 d-flex">
+                            <div class="user-avatar">
+                                <div class="user-avatar-boder rounded-circle">
+                                    <img src="asset/user-avatar.jpg" class="rounded-circle">
+                                </div>
+                            </div>
+                            <div class="user-info pl-5">
+                                <div class="user-info-header d-flex justify-content-between">
+                                    <div class="user-info-login">
+                                        <h3>Phạm Trương Tiểu Phụng</h3>
+                                        <h6><i>(phungptt1309)</i></h6>
+                                    </div>
+                                    <div class="user-controls">
+                                        <div class="pq-btn btn-logout mb-2">Đăng xuất</div>
+                                        <div class="pq-btn btn-change-password">Đổi mật khẩu</div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="user-info-body">
+                                    <table>
+                                        <tr>
+                                            <td><i class="fa fa-envelope-o" aria-hidden="true"></i></td>
+                                            <td>phungptt1309@gmail.com</td>
+                                        </tr>
+                                        <tr>
+                                            <td><i class="fa fa-home" aria-hidden="true"></i></td>
+                                            <td>Tân Phú, Quận 9, Hồ Chí Minh</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-dict-wrapper">
+                        <div class="user-dict-content p-5">
+                            <ul class="nav nav-tabs nav-justified">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#love-list">Danh sách yêu thích</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#review">Đánh giá của tôi</a>
+                                </li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane container active" id="love-list">
+                                    <div class="tab-detail-wrapper">
+                                        <div class="tab-detail-content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane container fade" id="review">
+                                    <div class="review-wrapper">
+                                        <div class="review-content">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <my-footer></my-footer>
+        </div>
+    </div>
+</body>
+<script>
+    //WOW STYLE
+    new WOW().init();
+
+    //Vue
+    var destinations = new Vue({
+        el: "#profile-page",
+        data: {
+
+        }
+    });
+</script>
+
+</html>

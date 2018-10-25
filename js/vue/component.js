@@ -1,58 +1,46 @@
 Vue.component('my-header', {
     props: ['login'],
     template: `
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item" v-if="login == false">
-                    Đăng nhập
-                </li> 
-                <li class="nav-item" v-else>
-                    Xin chào
-                </li> 
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+    <div class="my-header">
+        <div class="topbar-wrapper py-4">
+            <div class="topbar-content w-75 mx-auto d-flex justify-content-between align-items-center">
+                <div class="topbar-logo">
+                    <h4 class="text-white mb-0">Phú Quốc Travel</h4>
+                </div>
+                <div class="topbar-menu d-flex flex-row justify-content-end text-white align-items-center">
+                    <a href="#" class="menu-item">HOME</a>
+                    <a href="#" class="menu-item">TRIPS</a>
+                    <a href="#" class="menu-item">FOODS</a>
+                    <a href="#" class="menu-item">HOTEL</a>
+                    <a href="#" class="menu-item">CAR RENTALS</a>
+                    <a href="#" class="menu-item">PROFILE</a>
+                </div>
+            </div>
         </div>
-    </nav>
+    </div>
     `
 });
 
 Vue.component('my-footer', {
     template: `
-    <div class="container">
-        <span class="text-muted">Copyright 2018 | Du lịch Phú Quốc</span>
+    <div class="my-footer">
+        <div class="footer-wrapper py-4">
+            <div class="footer-content w-75 mx-auto d-flex justify-content-between align-items-center">
+                <div class="footer-info">
+                    <h4 class="text-white mb-0">Let's travel together!</h4>
+                </div>
+                <div class="footer-icon">
+                    <a href="#"><i class="fa fa-facebook-square m-3"></i></a>
+                    <a href="#"><i class="fa fa-instagram m-3"></i></a>
+                    <a href="#"><i class="fa fa-twitter-square m-3"></i></a>
+                    <a href="#"><i class="fa fa-google-plus-square m-3"></i></a>
+                    <a href="#"><i class="fa fa-dribbble m-3 mr-0"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center py-2 text-white">
+            <span>Copyright © 2018 by <a href="homepage.html">PhuQuocTravel</a></span>
+        </div>
     </div>
     `
 });
