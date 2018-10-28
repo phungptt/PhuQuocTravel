@@ -5,7 +5,7 @@ Vue.component('my-header', {
         <div class="topbar-wrapper py-4">
             <div class="topbar-content w-75 mx-auto d-flex justify-content-between align-items-center">
                 <div class="topbar-logo">
-                    <h4 class="text-white mb-0">Phú Quốc Travel</h4>
+                    <a href="homepage.html"><h4 class="text-white mb-0">Phú Quốc Travel</h4></a>
                 </div>
                 <div class="topbar-menu d-flex flex-row justify-content-end text-white align-items-center">
                     <a href="#" class="menu-item">HOME</a>
@@ -130,6 +130,37 @@ Vue.component('list-hotel', {
                     <div class="intro-button style-intro-button mt-4">
                         <div class="button-bcg "></div>
                         <a href="#">Xem thêm ...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+});
+
+Vue.component('love-list', {
+    props: ['items'],
+    template: `
+    <div class="row">
+        <div class="col-md-3" v-for="item, idx in items">
+            <div class="love-post-wrapper">
+                <div class="love-post-content">
+                    <div class="love-image">
+                        <div class="post-image" :style="{background: 'url(' + item.image + ')'}"></div>
+                    </div>
+                    <div class="love-info">
+                        <a :href="item.url"><h5 class="post-name my-2">{{ item.name }}</h5></a>
+                        <div class="love-list-control d-flex justify-content-between">
+                            <p class="love-time"><i class="fa fa-calendar" aria-hidden="true"></i> {{ item.datetime }}</p>
+                            <div class="dropdown">
+                                <div class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+                                </div>
+                                <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#"><i class="fa fa-trash-o mr-2" aria-hidden="true"></i> Bỏ yêu thích</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

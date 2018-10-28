@@ -1,5 +1,6 @@
+/** Main color: #2196f3 **/
 body {
-    background-color: #dbeefd;
+    /* background-color: #dbeefd; */
     font-family: "Brandon Grotesque", "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -83,14 +84,16 @@ body {
     font-size: 14px;
     box-shadow: none;
 }
-.btn-sign-up-in{
+
+.btn-sign-up-in {
     font-size: 13px;
     margin-top: 15px;
     border-radius: 4px;
     padding: 11px 10px;
     font-weight: 600;
 }
-.style-forgot{
+
+.style-forgot {
     position: absolute;
     right: 0;
     top: 0.3rem;
@@ -98,16 +101,201 @@ body {
     right: 10px;
     font-size: 12px;
 }
-.site-sign-up{
+
+.site-sign-up {
     text-decoration: underline;
     font-size: 14px;
     font-weight: 510;
     line-height: 30px;
     margin: 4px 0;
 }
-.password-note{
+
+.password-note {
     color: #a3aaae;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
 }
+
+/** Page Global CSS **/
+.my-container {
+    width: 80%;
+    margin: 3rem auto !important;
+}
+
+.my-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-btn {
+    position: relative;
+    padding: .5em 1.2em;
+    border-radius: .125em;
+    border: 2px solid #2196f3;
+    background: #2196f3;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    overflow: hidden;
+    font-weight: 600;
+    transition: all .2s;
+}
+
+.my-btn-white {
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+}
+
+.my-btn-circle {
+    border-radius: 50px !important;
+}
+
+.my-btn-circle-white {
+    border: 2px solid #fff;
+    color: #fff;
+    background: none;
+    border-radius: 50px !important;
+}
+
+.my-btn:after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    top: 0%;
+    left: -110%;
+    width: 25px;
+    height: 100%;
+    opacity: 0.3;
+    transition: all 0.7s;
+    transform: skewX(30deg);
+    filter: blur(5px);
+}
+
+.my-btn:hover:after {
+    left: 110%;
+    transition-property: left;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+.my-btn:hover {
+    background: #0e8df2;
+    border: 2px solid #0e8df2;
+}
+
+/** Vue Component CSS **/
+/*TOPBAR*/
+.my-header {
+    background: #333;
+    width: 100%;
+}
+
+.topbar-logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.topbar-menu .menu-item {
+    margin-right: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.topbar-menu .menu-item:last-child {
+    margin-right: 0;
+}
+
+.topbar-menu .menu-item:hover {
+    color: #ddd;
+}
+
+/*FOOTER*/
+.my-footer {
+    background: #333;
+    width: 100%;
+}
+
+.footer-info h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-icon a {
+    color: white;
+}
+
+.footer-icon a:last-child i {
+    margin-right: 0 !important;
+}
+
+.copyright {
+    background: #333;
+    font-style: italic;
+    border-top: 1px solid #555;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+/*LOVE LIST*/
+.love-post-wrapper {
+    position: relative;
+    box-shadow: 0px 0px 7px #ccc;
+}
+
+.love-post-wrapper:hover {
+    position: relative;
+    box-shadow: 0px 0px 12px #888;
+}
+
+.love-image .post-image {
+    width: 100%;
+    overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+
+.love-info {
+    padding: .4em .7em;
+    color: #777;
+}
+
+.love-info a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.love-info .love-time {
+    font-size: .75rem;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.love-list-control .dropdown {
+    cursor: pointer;
+}
+
+.love-list-control .dropdown-toggle:after {
+    border: 0;
+}
+
+.love-list-control .dropdown-menu {
+    right: 0 !important;
+    left: unset !important;
+}
+
+/** Main color: #2196f3 **/

@@ -1,3 +1,15 @@
+
+.user-info-wrapper{
+    background: #333;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.user-dict-wrapper{
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
 .user-avatar {
     width: 20%;
 }
@@ -11,28 +23,27 @@
     width: 80%;
 }
 
-.pq-btn{
-    padding: .2em 1em;
-    border-radius: .125em;
-    border: 1px solid #ccc;
-    background: #eee;
-    text-align: center;
-    cursor: pointer;
-}
-.pq-btn:hover{
-    background: #ddd;
-}
-.btn-logout{
-    
-}
 .user-info-body td{
     padding: .2em 1em .2em 0;
 }
 
-.nav-tabs .nav-item a{
-    border-radius: 0;
+.user-dict-wrapper .nav-tabs{
+    background: #333;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
-.nav-tabs .nav-item a.active, .nav-tabs .nav-item a:hover{
-    border-top: 2px solid #2196f3;
+.nav-tabs .nav-item a{
+    background: #333;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.nav-tabs .nav-item a.active{
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+.nav-tabs .nav-item a:hover{
+    border: 1px solid rgba(255, 255, 255, .1);
 }

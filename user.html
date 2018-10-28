@@ -13,9 +13,10 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/vue/vue.js"></script>
     <script src="js/vue/component.js"></script>
@@ -27,27 +28,27 @@
     <div class="content">
         <div class="profile-page" id="profile-page">
             <my-header></my-header>
-            <div class="profile-wrapper w-75 mx-auto my-5">
+            <div class="profile-wrapper my-container">
                 <div class="profile-content">
                     <div class="user-info-wrapper">
-                        <div class="user-info-content p-5 d-flex">
+                        <div class="user-info-content px-5 pt-5 pb-2 d-flex">
                             <div class="user-avatar">
                                 <div class="user-avatar-boder rounded-circle">
                                     <img src="asset/user-avatar.jpg" class="rounded-circle">
                                 </div>
                             </div>
-                            <div class="user-info pl-5">
-                                <div class="user-info-header d-flex justify-content-between">
+                            <div class="user-info pl-5 text-white">
+                                <div class="user-info-header my-flex-row">
                                     <div class="user-info-login">
                                         <h3>Phạm Trương Tiểu Phụng</h3>
                                         <h6><i>(phungptt1309)</i></h6>
                                     </div>
                                     <div class="user-controls">
-                                        <div class="pq-btn btn-logout mb-2">Đăng xuất</div>
-                                        <div class="pq-btn btn-change-password">Đổi mật khẩu</div>
+                                        <div class="my-btn my-btn-circle-white btn-logout mb-2">Đăng xuất</div>
+                                        <div class="my-btn my-btn-circle-white btn-change-password">Đổi mật khẩu</div>
                                     </div>
                                 </div>
-                                <hr>
+                                <hr style="border-top: 1px solid rgba(255, 255, 255, .1);">
                                 <div class="user-info-body">
                                     <table>
                                         <tr>
@@ -64,8 +65,8 @@
                         </div>
                     </div>
                     <div class="user-dict-wrapper">
-                        <div class="user-dict-content p-5">
-                            <ul class="nav nav-tabs nav-justified">
+                        <div class="user-dict-content">
+                            <ul class="nav nav-tabs pr-5" style="justify-content: flex-end;">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#love-list">Danh sách yêu thích</a>
                                 </li>
@@ -75,11 +76,11 @@
                             </ul>
 
                             <!-- Tab panes -->
-                            <div class="tab-content">
+                            <div class="tab-content p-5">
                                 <div class="tab-pane container active" id="love-list">
                                     <div class="tab-detail-wrapper">
                                         <div class="tab-detail-content">
-
+                                            <love-list :items="loveList" :key="loveList.length"></love-list>
                                         </div>
                                     </div>
                                 </div>
@@ -87,7 +88,7 @@
                                 <div class="tab-pane container fade" id="review">
                                     <div class="review-wrapper">
                                         <div class="review-content">
-
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -108,9 +109,15 @@
     var destinations = new Vue({
         el: "#profile-page",
         data: {
-
+            loveList: loveList
         }
     });
+
+    var imgLoveList = $(".love-image .post-image"),
+        widthImg = imgLoveList.width();
+
+    imgLoveList.height(widthImg);
+    $(".love-image-fade").height(widthImg);
 </script>
 
 </html>

@@ -47,4 +47,35 @@ var topDestinations = [
             content: "Một trong những lựa chọn hàng đầu ở Dương Đông. Với thiết kế lạ mắt của kiến trúc sư Bill Bensley, JW Marriott Phu Quoc Emerald Bay Resort & Spa nằm dọc theo bờ biển của khu vực bãi biển Khem và có bãi biển riêng",
             name: "The Shell Resort",
         },
-]
+    ],
+
+    loveList = [
+        {
+            image: 'asset/hon-may-rut.jpg',
+            name: 'Hòn mây rút',
+            category: 'hotel',
+            datetime: '20/10/2018',
+            url: '#'
+        },
+        {
+            image: 'asset/marriott-resort.jpg',
+            name: 'Marriott resort',
+            category: 'hotel',
+            datetime: '20/10/2018',
+            url: '#'
+        },
+        {
+            image: 'asset/steamed-mantis-shrimp.jpg',
+            name: 'Ốc đêm',
+            category: 'hotel',
+            datetime: '10/10/2018',
+            url: '#'
+        },
+        {
+            image: 'asset/lang-chai-ham-ninh-Phu-Quoc.jpg',
+            name: 'Làng chài Hàm Ninh',
+            category: 'hotel',
+            datetime: '02/10/2018',
+            url: '#'
+        }
+    ];
