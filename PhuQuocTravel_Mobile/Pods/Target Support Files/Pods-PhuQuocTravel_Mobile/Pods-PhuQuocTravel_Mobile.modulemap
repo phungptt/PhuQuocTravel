@@ -1,0 +1,6 @@
+framework module Pods_PhuQuocTravel_Mobile {
+  umbrella header "Pods-PhuQuocTravel_Mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,804 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D887B3ADD1509A2D481924A /* Pods_PhuQuocTravel_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B9485CDFA64C12927AB92D /* Pods_PhuQuocTravel_MobileUITests.framework */; };
+		3D66CDA2219B24FA009A1BF5 /* PopularDestnationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */; };
+		3DA6F45F2180009900003794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F45E2180009900003794 /* AppDelegate.swift */; };
+		3DA6F4612180009900003794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F4602180009900003794 /* ViewController.swift */; };
+		3DA6F4642180009900003794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4622180009900003794 /* Main.storyboard */; };
+		3DA6F4662180009A00003794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4652180009A00003794 /* Assets.xcassets */; };
+		3DA6F4692180009A00003794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4672180009A00003794 /* LaunchScreen.storyboard */; };
+		3DA6F4742180009B00003794 /* PhuQuocTravel_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F4732180009B00003794 /* PhuQuocTravel_MobileTests.swift */; };
+		3DA6F47F2180009B00003794 /* PhuQuocTravel_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F47E2180009B00003794 /* PhuQuocTravel_MobileUITests.swift */; };
+		3DE96395218B47D100EF56BD /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE96394218B47D100EF56BD /* TestViewController.swift */; };
+		3DEC657B218001B600400E8B /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC657A218001B600400E8B /* SlideView.swift */; };
+		3DEC657E218001C800400E8B /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC657D218001C800400E8B /* SlideViewController.swift */; };
+		3DEC6582218001D000400E8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6580218001D000400E8B /* Color+Extension.swift */; };
+		3DEC6583218001D000400E8B /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6581218001D000400E8B /* Font+Extension.swift */; };
+		3DEC6585218021B700400E8B /* FloatActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6584218021B700400E8B /* FloatActionButton.swift */; };
+		3DEC658821802B9E00400E8B /* SearchTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */; };
+		7438581F7F986E8CA45C389E /* Pods_PhuQuocTravel_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188868C732BCB931CEF68F57 /* Pods_PhuQuocTravel_MobileTests.framework */; };
+		D0E62A1718F18DF92092C6BF /* Pods_PhuQuocTravel_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DC7DC6F2C70DBF8A8F6261 /* Pods_PhuQuocTravel_Mobile.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DA6F4702180009B00003794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DA6F4532180009900003794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DA6F45A2180009900003794;
+			remoteInfo = PhuQuocTravel_Mobile;
+		};
+		3DA6F47B2180009B00003794 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DA6F4532180009900003794 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DA6F45A2180009900003794;
+			remoteInfo = PhuQuocTravel_Mobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		188868C732BCB931CEF68F57 /* Pods_PhuQuocTravel_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4646DE1349BCBB1F8B5082 /* Pods-PhuQuocTravel_MobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileUITests/Pods-PhuQuocTravel_MobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestnationCard.swift; sourceTree = "<group>"; };
+		3DA6F45B2180009900003794 /* PhuQuocTravel_Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhuQuocTravel_Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA6F45E2180009900003794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DA6F4602180009900003794 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DA6F4632180009900003794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DA6F4652180009A00003794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DA6F4682180009A00003794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DA6F46A2180009A00003794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA6F46F2180009B00003794 /* PhuQuocTravel_MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhuQuocTravel_MobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA6F4732180009B00003794 /* PhuQuocTravel_MobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhuQuocTravel_MobileTests.swift; sourceTree = "<group>"; };
+		3DA6F4752180009B00003794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA6F47A2180009B00003794 /* PhuQuocTravel_MobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhuQuocTravel_MobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA6F47E2180009B00003794 /* PhuQuocTravel_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhuQuocTravel_MobileUITests.swift; sourceTree = "<group>"; };
+		3DA6F4802180009B00003794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DE96394218B47D100EF56BD /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		3DEC657A218001B600400E8B /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
+		3DEC657D218001C800400E8B /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
+		3DEC6580218001D000400E8B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		3DEC6581218001D000400E8B /* Font+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		3DEC6584218021B700400E8B /* FloatActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatActionButton.swift; sourceTree = "<group>"; };
+		3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTripsViewController.swift; sourceTree = "<group>"; };
+		411E0AC7D5DA2EE2F3369BA8 /* Pods-PhuQuocTravel_MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileTests/Pods-PhuQuocTravel_MobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		A88B9C3997DA4A447A512834 /* Pods-PhuQuocTravel_MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileUITests/Pods-PhuQuocTravel_MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B1DC7DC6F2C70DBF8A8F6261 /* Pods_PhuQuocTravel_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3B9485CDFA64C12927AB92D /* Pods_PhuQuocTravel_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9F28671D403376E6FB05423 /* Pods-PhuQuocTravel_Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_Mobile/Pods-PhuQuocTravel_Mobile.release.xcconfig"; sourceTree = "<group>"; };
+		C5A6CCEB1AE5E9A2D610DF47 /* Pods-PhuQuocTravel_Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_Mobile/Pods-PhuQuocTravel_Mobile.debug.xcconfig"; sourceTree = "<group>"; };
+		DC039C475DC8228D2885921B /* Pods-PhuQuocTravel_MobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileTests/Pods-PhuQuocTravel_MobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DA6F4582180009900003794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0E62A1718F18DF92092C6BF /* Pods_PhuQuocTravel_Mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F46C2180009B00003794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7438581F7F986E8CA45C389E /* Pods_PhuQuocTravel_MobileTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F4772180009B00003794 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D887B3ADD1509A2D481924A /* Pods_PhuQuocTravel_MobileUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DA6F4522180009900003794 = {
+			isa = PBXGroup;
+			children = (
+				3DA6F45D2180009900003794 /* PhuQuocTravel_Mobile */,
+				3DA6F4722180009B00003794 /* PhuQuocTravel_MobileTests */,
+				3DA6F47D2180009B00003794 /* PhuQuocTravel_MobileUITests */,
+				3DA6F45C2180009900003794 /* Products */,
+				58B472853829C6390AAB2058 /* Pods */,
+				4E8EF1E84C0D23632A476A4D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DA6F45C2180009900003794 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DA6F45B2180009900003794 /* PhuQuocTravel_Mobile.app */,
+				3DA6F46F2180009B00003794 /* PhuQuocTravel_MobileTests.xctest */,
+				3DA6F47A2180009B00003794 /* PhuQuocTravel_MobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DA6F45D2180009900003794 /* PhuQuocTravel_Mobile */ = {
+			isa = PBXGroup;
+			children = (
+				3DE96393218B47BC00EF56BD /* test */,
+				3DEC6579218001B600400E8B /* Components */,
+				3DEC657F218001D000400E8B /* Extension */,
+				3DEC657C218001C800400E8B /* View */,
+				3DA6F45E2180009900003794 /* AppDelegate.swift */,
+				3DA6F4622180009900003794 /* Main.storyboard */,
+				3DA6F4652180009A00003794 /* Assets.xcassets */,
+				3DA6F4672180009A00003794 /* LaunchScreen.storyboard */,
+				3DA6F46A2180009A00003794 /* Info.plist */,
+			);
+			path = PhuQuocTravel_Mobile;
+			sourceTree = "<group>";
+		};
+		3DA6F4722180009B00003794 /* PhuQuocTravel_MobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				3DA6F4732180009B00003794 /* PhuQuocTravel_MobileTests.swift */,
+				3DA6F4752180009B00003794 /* Info.plist */,
+			);
+			path = PhuQuocTravel_MobileTests;
+			sourceTree = "<group>";
+		};
+		3DA6F47D2180009B00003794 /* PhuQuocTravel_MobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3DA6F47E2180009B00003794 /* PhuQuocTravel_MobileUITests.swift */,
+				3DA6F4802180009B00003794 /* Info.plist */,
+			);
+			path = PhuQuocTravel_MobileUITests;
+			sourceTree = "<group>";
+		};
+		3DE96393218B47BC00EF56BD /* test */ = {
+			isa = PBXGroup;
+			children = (
+				3DE96394218B47D100EF56BD /* TestViewController.swift */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		3DEC6579218001B600400E8B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				3DEC657D218001C800400E8B /* SlideViewController.swift */,
+				3DEC657A218001B600400E8B /* SlideView.swift */,
+				3DEC6584218021B700400E8B /* FloatActionButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3DEC657C218001C800400E8B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3DEC658621802B8600400E8B /* SubView */,
+				3DA6F4602180009900003794 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3DEC657F218001D000400E8B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3DEC6580218001D000400E8B /* Color+Extension.swift */,
+				3DEC6581218001D000400E8B /* Font+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		3DEC658621802B8600400E8B /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */,
+				3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
+		4E8EF1E84C0D23632A476A4D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1DC7DC6F2C70DBF8A8F6261 /* Pods_PhuQuocTravel_Mobile.framework */,
+				188868C732BCB931CEF68F57 /* Pods_PhuQuocTravel_MobileTests.framework */,
+				B3B9485CDFA64C12927AB92D /* Pods_PhuQuocTravel_MobileUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58B472853829C6390AAB2058 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5A6CCEB1AE5E9A2D610DF47 /* Pods-PhuQuocTravel_Mobile.debug.xcconfig */,
+				B9F28671D403376E6FB05423 /* Pods-PhuQuocTravel_Mobile.release.xcconfig */,
+				DC039C475DC8228D2885921B /* Pods-PhuQuocTravel_MobileTests.debug.xcconfig */,
+				411E0AC7D5DA2EE2F3369BA8 /* Pods-PhuQuocTravel_MobileTests.release.xcconfig */,
+				1A4646DE1349BCBB1F8B5082 /* Pods-PhuQuocTravel_MobileUITests.debug.xcconfig */,
+				A88B9C3997DA4A447A512834 /* Pods-PhuQuocTravel_MobileUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DA6F45A2180009900003794 /* PhuQuocTravel_Mobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA6F4832180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_Mobile" */;
+			buildPhases = (
+				27A8C80A82E6F78A092BC8C7 /* [CP] Check Pods Manifest.lock */,
+				3DA6F4572180009900003794 /* Sources */,
+				3DA6F4582180009900003794 /* Frameworks */,
+				3DA6F4592180009900003794 /* Resources */,
+				5F6CC52C7E1252F5D18707D3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhuQuocTravel_Mobile;
+			productName = PhuQuocTravel_Mobile;
+			productReference = 3DA6F45B2180009900003794 /* PhuQuocTravel_Mobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DA6F46E2180009B00003794 /* PhuQuocTravel_MobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA6F4862180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_MobileTests" */;
+			buildPhases = (
+				671F3A9D0970992EFBFAD0BF /* [CP] Check Pods Manifest.lock */,
+				3DA6F46B2180009B00003794 /* Sources */,
+				3DA6F46C2180009B00003794 /* Frameworks */,
+				3DA6F46D2180009B00003794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DA6F4712180009B00003794 /* PBXTargetDependency */,
+			);
+			name = PhuQuocTravel_MobileTests;
+			productName = PhuQuocTravel_MobileTests;
+			productReference = 3DA6F46F2180009B00003794 /* PhuQuocTravel_MobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3DA6F4792180009B00003794 /* PhuQuocTravel_MobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DA6F4892180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_MobileUITests" */;
+			buildPhases = (
+				BF9D274B6E1EE84152EBAF47 /* [CP] Check Pods Manifest.lock */,
+				3DA6F4762180009B00003794 /* Sources */,
+				3DA6F4772180009B00003794 /* Frameworks */,
+				3DA6F4782180009B00003794 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DA6F47C2180009B00003794 /* PBXTargetDependency */,
+			);
+			name = PhuQuocTravel_MobileUITests;
+			productName = PhuQuocTravel_MobileUITests;
+			productReference = 3DA6F47A2180009B00003794 /* PhuQuocTravel_MobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DA6F4532180009900003794 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Nguyễn Quốc Tuyến";
+				TargetAttributes = {
+					3DA6F45A2180009900003794 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					3DA6F46E2180009B00003794 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3DA6F45A2180009900003794;
+					};
+					3DA6F4792180009B00003794 = {
+						CreatedOnToolsVersion = 10.0;
+						TestTargetID = 3DA6F45A2180009900003794;
+					};
+				};
+			};
+			buildConfigurationList = 3DA6F4562180009900003794 /* Build configuration list for PBXProject "PhuQuocTravel_Mobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DA6F4522180009900003794;
+			productRefGroup = 3DA6F45C2180009900003794 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DA6F45A2180009900003794 /* PhuQuocTravel_Mobile */,
+				3DA6F46E2180009B00003794 /* PhuQuocTravel_MobileTests */,
+				3DA6F4792180009B00003794 /* PhuQuocTravel_MobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DA6F4592180009900003794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA6F4692180009A00003794 /* LaunchScreen.storyboard in Resources */,
+				3DA6F4662180009A00003794 /* Assets.xcassets in Resources */,
+				3DA6F4642180009900003794 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F46D2180009B00003794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F4782180009B00003794 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27A8C80A82E6F78A092BC8C7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhuQuocTravel_Mobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5F6CC52C7E1252F5D18707D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PhuQuocTravel_Mobile/Pods-PhuQuocTravel_Mobile-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhuQuocTravel_Mobile/Pods-PhuQuocTravel_Mobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671F3A9D0970992EFBFAD0BF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhuQuocTravel_MobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF9D274B6E1EE84152EBAF47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhuQuocTravel_MobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DA6F4572180009900003794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEC657B218001B600400E8B /* SlideView.swift in Sources */,
+				3DEC658821802B9E00400E8B /* SearchTripsViewController.swift in Sources */,
+				3DEC6582218001D000400E8B /* Color+Extension.swift in Sources */,
+				3DEC6583218001D000400E8B /* Font+Extension.swift in Sources */,
+				3D66CDA2219B24FA009A1BF5 /* PopularDestnationCard.swift in Sources */,
+				3DA6F4612180009900003794 /* ViewController.swift in Sources */,
+				3DA6F45F2180009900003794 /* AppDelegate.swift in Sources */,
+				3DEC6585218021B700400E8B /* FloatActionButton.swift in Sources */,
+				3DE96395218B47D100EF56BD /* TestViewController.swift in Sources */,
+				3DEC657E218001C800400E8B /* SlideViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F46B2180009B00003794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA6F4742180009B00003794 /* PhuQuocTravel_MobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DA6F4762180009B00003794 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA6F47F2180009B00003794 /* PhuQuocTravel_MobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DA6F4712180009B00003794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DA6F45A2180009900003794 /* PhuQuocTravel_Mobile */;
+			targetProxy = 3DA6F4702180009B00003794 /* PBXContainerItemProxy */;
+		};
+		3DA6F47C2180009B00003794 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DA6F45A2180009900003794 /* PhuQuocTravel_Mobile */;
+			targetProxy = 3DA6F47B2180009B00003794 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DA6F4622180009900003794 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DA6F4632180009900003794 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DA6F4672180009A00003794 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DA6F4682180009A00003794 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DA6F4812180009B00003794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DA6F4822180009B00003794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DA6F4842180009B00003794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A6CCEB1AE5E9A2D610DF47 /* Pods-PhuQuocTravel_Mobile.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898EDDGZNP;
+				INFOPLIST_FILE = PhuQuocTravel_Mobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3DA6F4852180009B00003794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9F28671D403376E6FB05423 /* Pods-PhuQuocTravel_Mobile.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898EDDGZNP;
+				INFOPLIST_FILE = PhuQuocTravel_Mobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-Mobile";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3DA6F4872180009B00003794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC039C475DC8228D2885921B /* Pods-PhuQuocTravel_MobileTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhuQuocTravel_MobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhuQuocTravel_Mobile.app/PhuQuocTravel_Mobile";
+			};
+			name = Debug;
+		};
+		3DA6F4882180009B00003794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 411E0AC7D5DA2EE2F3369BA8 /* Pods-PhuQuocTravel_MobileTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhuQuocTravel_MobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-MobileTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhuQuocTravel_Mobile.app/PhuQuocTravel_Mobile";
+			};
+			name = Release;
+		};
+		3DA6F48A2180009B00003794 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A4646DE1349BCBB1F8B5082 /* Pods-PhuQuocTravel_MobileUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhuQuocTravel_MobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhuQuocTravel_Mobile;
+			};
+			name = Debug;
+		};
+		3DA6F48B2180009B00003794 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88B9C3997DA4A447A512834 /* Pods-PhuQuocTravel_MobileUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhuQuocTravel_MobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "tuyennq.PhuQuocTravel-MobileUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhuQuocTravel_Mobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DA6F4562180009900003794 /* Build configuration list for PBXProject "PhuQuocTravel_Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA6F4812180009B00003794 /* Debug */,
+				3DA6F4822180009B00003794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DA6F4832180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_Mobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA6F4842180009B00003794 /* Debug */,
+				3DA6F4852180009B00003794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DA6F4862180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_MobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA6F4872180009B00003794 /* Debug */,
+				3DA6F4882180009B00003794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DA6F4892180009B00003794 /* Build configuration list for PBXNativeTarget "PhuQuocTravel_MobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DA6F48A2180009B00003794 /* Debug */,
+				3DA6F48B2180009B00003794 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DA6F4532180009900003794 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module Pods_PhuQuocTravel_MobileUITests {
+  umbrella header "Pods-PhuQuocTravel_MobileUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
