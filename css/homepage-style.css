@@ -94,7 +94,7 @@
 }
 
 .style-search-tab:hover {
-    background-color: #2196f3 !important;
+    background-color: #56317A !important;
     color: #FFFFFF !important;
 }
 
@@ -114,7 +114,7 @@
 }
 .search-tab-item .nav-link.active{
     border: none !important;
-    background: #2196f3;
+    background: #56317a;
     color: #fff;
 }
 
@@ -225,7 +225,7 @@
     left: 0;
     width: 200%;
     height: 100%;
-    background: linear-gradient(to right, #ffae1a,  #1414ff, #ffa500);
+    background-image: linear-gradient(to right,#3d3393 0%, #2b76b9 37%, #2cacd1 65%);
     z-index: -1;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
@@ -269,7 +269,7 @@
     top: 0;
     left: 0;
     content: '';
-    background: linear-gradient(to right, #ffae1a,  #1414ff, #ffa500);
+    background: linear-gradient(to left, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -ms-transition: all 400ms ease;
@@ -281,7 +281,7 @@
 .tab-content{
     width: 100%;
     height: 192px;
-    background: linear-gradient(to right, #fa9e1b, #8d4fff);
+    background-image: linear-gradient(to left, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     z-index: 10;
 }
 .search-name div{
@@ -322,11 +322,11 @@
 .button-search{
     font-size: 13px;
     font-weight: 700;
-    color: #fff;
+    color: #000000;
     text-transform: uppercase;
     padding-left: 46px;
     padding-right: 46px;
-    background: #31124b;
+    background: #FFFFFF;
     transform: translateY(15px);
     border: none;
     outline: none !important;
@@ -351,7 +351,7 @@
     vertical-align: middle;
     width: 5.75px;
     height: 5.63px;
-    background: #FFFFFF;
+    background: #000000;
     border-radius: 50%;
     margin-right: 0.5px;
 }
@@ -499,7 +499,7 @@
     display: inline-block;
     font-size: 36px;
     font-weight: 700;
-    color: #eda84a;
+    color: #56317A;
     line-height: 25px;
 }
 .prices span{
@@ -538,7 +538,7 @@
 /*TOP FOOD*/
 .food{
     padding-top: 60px;
-    background: #fa9e1b;
+    background-image: linear-gradient(to left, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
     padding-bottom: 60px;
 }
 .top-food{
@@ -572,8 +572,8 @@
 /*FOOTER*/
 .footer-section{
     background-color: #0d0d0d;
-    padding-top: 130px;
-    padding-bottom: 130px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 }
 .footer-info{
     text-align: center !important;

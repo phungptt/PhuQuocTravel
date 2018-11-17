@@ -51,9 +51,7 @@ Vue.component('top-destination', {
     <div class="top-item-image col-md-3">
         <img v-bind:src="item.image" alt="">
         <div class="intro-item-content d-flex flex-column align-items-center justify-content-center">
-            <div class="intro-date">
-                {{ item.datetime }}
-            </div>
+            
             <div class="intro-center text-center">
                 <h3>{{ item.subname }}</h3>
                 <h1>{{ item.name }}</h1>
