@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIColor {
-    static var titleColor: UIColor {
-        return UIColor(red: 250/255, green: 158/255, blue: 28/255, alpha: 1)
+    static var appColor: UIColor {
+        return UIColor(red: 86/255, green: 49/255, blue: 122/255, alpha: 1)
     }
 }

@@ -1,20 +1,29 @@
 PODS:
   - Floaty (4.0.1)
+  - RxCocoa (4.3.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.3.1)
   - SnapKit (4.0.1)
 
 DEPENDENCIES:
   - Floaty (~> 4)
-  - SnapKit (~> 4.0.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - SnapKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Floaty
+    - RxCocoa
+    - RxSwift
     - SnapKit
 
 SPEC CHECKSUMS:
   Floaty: 82854e1a5ef4fa208281ebd4da2f3d1e51ba67a6
+  RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
+  RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
 
-PODFILE CHECKSUM: bd3a66572451ad339f23f4f290b0ec678af8a19b
+PODFILE CHECKSUM: db7aca537161db29fe5b2bf68721df26c8126cff
 
 COCOAPODS: 1.5.3

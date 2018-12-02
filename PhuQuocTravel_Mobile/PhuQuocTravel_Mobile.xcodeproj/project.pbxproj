@@ -9,14 +9,17 @@
 /* Begin PBXBuildFile section */
 		2D887B3ADD1509A2D481924A /* Pods_PhuQuocTravel_MobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3B9485CDFA64C12927AB92D /* Pods_PhuQuocTravel_MobileUITests.framework */; };
 		3D66CDA2219B24FA009A1BF5 /* PopularDestnationCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */; };
+		3D7211D821A253E200F87E6D /* BestRoomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7211D721A253E200F87E6D /* BestRoomCard.swift */; };
 		3DA6F45F2180009900003794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F45E2180009900003794 /* AppDelegate.swift */; };
-		3DA6F4612180009900003794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F4602180009900003794 /* ViewController.swift */; };
+		3DA6F4612180009900003794 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F4602180009900003794 /* HomePageViewController.swift */; };
 		3DA6F4642180009900003794 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4622180009900003794 /* Main.storyboard */; };
 		3DA6F4662180009A00003794 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4652180009A00003794 /* Assets.xcassets */; };
 		3DA6F4692180009A00003794 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DA6F4672180009A00003794 /* LaunchScreen.storyboard */; };
 		3DA6F4742180009B00003794 /* PhuQuocTravel_MobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F4732180009B00003794 /* PhuQuocTravel_MobileTests.swift */; };
 		3DA6F47F2180009B00003794 /* PhuQuocTravel_MobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA6F47E2180009B00003794 /* PhuQuocTravel_MobileUITests.swift */; };
 		3DE96395218B47D100EF56BD /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE96394218B47D100EF56BD /* TestViewController.swift */; };
+		3DEA5A26219BD716003B7B27 /* Oswald-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA5A25219BD340003B7B27 /* Oswald-Medium.ttf */; };
+		3DEA5A28219BD72F003B7B27 /* Oswald-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DEA5A24219BAC29003B7B27 /* Oswald-Light.ttf */; };
 		3DEC657B218001B600400E8B /* SlideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC657A218001B600400E8B /* SlideView.swift */; };
 		3DEC657E218001C800400E8B /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC657D218001C800400E8B /* SlideViewController.swift */; };
 		3DEC6582218001D000400E8B /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6580218001D000400E8B /* Color+Extension.swift */; };
@@ -48,9 +51,10 @@
 		188868C732BCB931CEF68F57 /* Pods_PhuQuocTravel_MobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_MobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A4646DE1349BCBB1F8B5082 /* Pods-PhuQuocTravel_MobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileUITests/Pods-PhuQuocTravel_MobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopularDestnationCard.swift; sourceTree = "<group>"; };
+		3D7211D721A253E200F87E6D /* BestRoomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestRoomCard.swift; sourceTree = "<group>"; };
 		3DA6F45B2180009900003794 /* PhuQuocTravel_Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhuQuocTravel_Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA6F45E2180009900003794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DA6F4602180009900003794 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DA6F4602180009900003794 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		3DA6F4632180009900003794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DA6F4652180009A00003794 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DA6F4682180009A00003794 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,6 +66,8 @@
 		3DA6F47E2180009B00003794 /* PhuQuocTravel_MobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhuQuocTravel_MobileUITests.swift; sourceTree = "<group>"; };
 		3DA6F4802180009B00003794 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DE96394218B47D100EF56BD /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		3DEA5A24219BAC29003B7B27 /* Oswald-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Light.ttf"; sourceTree = "<group>"; };
+		3DEA5A25219BD340003B7B27 /* Oswald-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Oswald-Medium.ttf"; sourceTree = "<group>"; };
 		3DEC657A218001B600400E8B /* SlideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideView.swift; sourceTree = "<group>"; };
 		3DEC657D218001C800400E8B /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		3DEC6580218001D000400E8B /* Color+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		3DA6F45D2180009900003794 /* PhuQuocTravel_Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				3DEA5A23219BAB39003B7B27 /* Resource */,
 				3DE96393218B47BC00EF56BD /* test */,
 				3DEC6579218001B600400E8B /* Components */,
 				3DEC657F218001D000400E8B /* Extension */,
@@ -169,6 +176,24 @@
 			path = test;
 			sourceTree = "<group>";
 		};
+		3DEA5A23219BAB39003B7B27 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3DEA5A25219BD340003B7B27 /* Oswald-Medium.ttf */,
+				3DEA5A24219BAC29003B7B27 /* Oswald-Light.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3DEA5A2B21A00606003B7B27 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				3DEC658621802B8600400E8B /* SubView */,
+				3DA6F4602180009900003794 /* HomePageViewController.swift */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
 		3DEC6579218001B600400E8B /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,8 +207,7 @@
 		3DEC657C218001C800400E8B /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3DEC658621802B8600400E8B /* SubView */,
-				3DA6F4602180009900003794 /* ViewController.swift */,
+				3DEA5A2B21A00606003B7B27 /* HomePage */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -202,6 +226,7 @@
 			children = (
 				3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */,
 				3D66CDA1219B24FA009A1BF5 /* PopularDestnationCard.swift */,
+				3D7211D721A253E200F87E6D /* BestRoomCard.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -338,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA6F4692180009A00003794 /* LaunchScreen.storyboard in Resources */,
+				3DEA5A28219BD72F003B7B27 /* Oswald-Light.ttf in Resources */,
+				3DEA5A26219BD716003B7B27 /* Oswald-Medium.ttf in Resources */,
 				3DA6F4662180009A00003794 /* Assets.xcassets in Resources */,
 				3DA6F4642180009900003794 /* Main.storyboard in Resources */,
 			);
@@ -392,6 +419,8 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PhuQuocTravel_Mobile/Pods-PhuQuocTravel_Mobile-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -399,6 +428,8 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,7 +493,8 @@
 				3DEC6582218001D000400E8B /* Color+Extension.swift in Sources */,
 				3DEC6583218001D000400E8B /* Font+Extension.swift in Sources */,
 				3D66CDA2219B24FA009A1BF5 /* PopularDestnationCard.swift in Sources */,
-				3DA6F4612180009900003794 /* ViewController.swift in Sources */,
+				3DA6F4612180009900003794 /* HomePageViewController.swift in Sources */,
+				3D7211D821A253E200F87E6D /* BestRoomCard.swift in Sources */,
 				3DA6F45F2180009900003794 /* AppDelegate.swift in Sources */,
 				3DEC6585218021B700400E8B /* FloatActionButton.swift in Sources */,
 				3DE96395218B47D100EF56BD /* TestViewController.swift in Sources */,
