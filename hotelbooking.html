@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Detail</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin-ext">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hotelbooking.css">
+    <link rel="stylesheet" href="css/ihover.css">
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/component.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="hotel-detail" id="hotel-detail">
+            <my-header></my-header>
+            <!--HEADER-->
+            <div class="row m-0">
+                <div class="header position-relative">
+                    <div class="room-image col-md-10">
+                        <div id="room" class="carousel slide" data-ride="carusel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#room" data-slide-to="0" class="active"></li>
+                                <li data-target="#room" data-slide-to="1"></li>
+                                <li data-target="#room" data-slide-to="2"></li>
+                                <li data-target="#room" data-slide-to="3"></li>
+                            </ol>
+                            <!--Slideshow-->
+                            <div class="carousel-inner  ">
+                                <div class="carousel-item active">
+                                    <img src="asset/slide-salinda-resort-1.jpg" alt="" class="style-item">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/slide-salinda-resort-2.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/slide-salinda-resort-3.jpg" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="asset/slide-salinda-resort-4.jpg" alt="">
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="carousel-control-prev" href="#room" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#room" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ROOM OVERVIEW-->
+            <div class="room-overview">
+                <div class="container">
+                    <div class="row m-5">
+                        <div class="col-md-16">
+                            <!--ROOM BLOCK-->
+                            <div class="room-block">
+                                <h2 class="title">
+                                    PHÒNG SUIT HƯỚNG BIỂN
+                                </h2>
+                                <span>
+                                    Một không gian riêng tư và tách biệt cùng ban công ngoài trời rộng lớn,
+                                    phòng Suite Sea View Hotel là nơi lý tưởng để đón hoàng hôn của đảo ngọc Phú Quốc.
+                                    Không gian nội thất tràn ngập ánh sáng cùng giường ngủ lớn và được thiết kế êm ái,
+                                    tận hưởng cuộc sống thượng lưu trên chiếc ghế sofa dễ chịu và hướng tầm nhìn ra bờ
+                                    biển nguyên
+                                    sơ.
+                                </span>
+                            </div>
+                            <!--ROOM AMENITIES-->
+                            <div class="room-block room-amenities">
+                                <h2 class="title">
+                                    TIỆN NGHI VÀ DỊCH VỤ
+                                </h2>
+                                <div class="row">
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-air-condition"></span>
+                                                <img src="asset/icon/air-conditioner.png">
+                                                <p>Điều hòa</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-king-bed"></span>
+                                                <img src="asset/icon/bed.png">
+                                                <p>Giường King</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-guest"></span>
+                                                <img src="asset/icon/family.png">
+                                                <p>2 Người</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-wifi"></span>
+                                                <img src="asset/icon/wifi.png">
+                                                <p>Internet</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-washer"></span>
+                                                <img src="asset/icon/dishwasher.png">
+                                                <p>Giặt ủi</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                    <!--Item-->
+                                    <div class="col-xs-6 col-sm-2">
+                                        <figure>
+                                            <figcaption>
+                                                <span class="hotelicon hotelicon-room-service"></span>
+                                                <img src="asset/icon/service.png">
+                                                <p>Dịch vụ Phòng</p>
+                                            </figcaption>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--effect-->
+                
+
+                
+                <!-- Top to bottom-->
+                <div class="row">
+                    <div class="col-sm-6">
+
+                        <!-- normal -->
+                        <div class="ih-item square effect6 top_to_bottom"><a href="#">
+                                <div class="img"><img src="asset/test/1.jpg" alt="img"></div>
+                                <div class="info">
+                                    <h3>Heading here</h3>
+                                    <p>Description goes here</p>
+                                </div>
+                            </a></div>
+                        <!-- end normal -->
+
+                    </div>
+                    <div class="col-sm-6">
+
+                        <!-- colored -->
+                        <div class="ih-item square colored effect6 top_to_bottom"><a href="#">
+                                <div class="img"><img src="asset/test/1.jpg" alt="img"></div>
+                                <div class="info">
+                                    <h3>Heading here</h3>
+                                    <p>Description goes here</p>
+                                </div>
+                            </a></div>
+                        <!-- end colored -->
+
+                    </div>
+                </div>
+                <!-- end Top to bottom-->
+
+
+
+
+                <my-footer></my-footer>
+            </div>
+        </div>
+
+</body>
+<script>
+    //WOW STYLE
+    new WOW().init();
+
+    //Vue
+    var destinations = new Vue({
+        el: "#hotel-detail",
+        data: {
+            loveList: loveList
+        }
+    });
+
+    var imgLoveList = $(".love-image .post-image"),
+        widthImg = imgLoveList.width();
+
+    imgLoveList.height(widthImg);
+    $(".love-image-fade").height(widthImg);
+</script>
+
+</html>

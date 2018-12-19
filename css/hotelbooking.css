@@ -1,0 +1,216 @@
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #222;
+    font-weight: 300;
+
+}
+
+.carousel-inner img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.room-image {
+    margin: 0 auto;
+}
+
+.room-overview {
+
+    font-size: 15px;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.room-block {
+    padding-top: 70px;
+}
+
+.title {
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+    color: inherit;
+    padding-bottom: 70px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+h2.title::before {
+    bottom: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+}
+
+h2.title::after {
+    bottom: 30px;
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+}
+
+.title span {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+figure figcaption {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+span.hotelicon-air-condition::before {
+
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+
+
+.hotelicon {
+
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+}
+
+
+/** Vue Component CSS **/
+/*TOPBAR*/
+.my-header {
+    background: #333;
+    width: 100%;
+}
+
+.topbar-logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.topbar-menu .menu-item {
+    margin-right: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.topbar-menu .menu-item:last-child {
+    margin-right: 0;
+}
+
+.topbar-menu .menu-item:hover {
+    color: #ddd;
+}
+
+
+
+/*FOOTER*/
+.my-footer {
+    background: #333;
+    width: 100%;
+}
+
+.footer-info h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-icon a {
+    color: white;
+}
+
+.footer-icon a:last-child i {
+    margin-right: 0 !important;
+}
+
+.copyright {
+    background: #333;
+    font-style: italic;
+    border-top: 1px solid #555;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+
+
+
+/*LOVE LIST*/
+.love-post-wrapper {
+    position: relative;
+    box-shadow: 0px 0px 7px #ccc;
+}
+
+.love-post-wrapper:hover {
+    position: relative;
+    box-shadow: 0px 0px 12px #888;
+}
+
+.love-image .post-image {
+    width: 100%;
+    overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+
+.love-info {
+    padding: .4em .7em;
+    color: #777;
+}
+
+.love-info a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.love-info .love-time {
+    font-size: .75rem;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.love-list-control .dropdown {
+    cursor: pointer;
+}
+
+.love-list-control .dropdown-toggle:after {
+    border: 0;
+}
+
+.love-list-control .dropdown-menu {
+    right: 0 !important;
+    left: unset !important;
+}
+
+/** Main color: #2196f3 **/
