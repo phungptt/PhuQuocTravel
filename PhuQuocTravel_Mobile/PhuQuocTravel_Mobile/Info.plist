@@ -6,6 +6,7 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>Segoe ui semibold italic.ttf</string>
 		<string>Oswald-Light.ttf</string>
 		<string>Oswald-Medium.ttf</string>
 	</array>

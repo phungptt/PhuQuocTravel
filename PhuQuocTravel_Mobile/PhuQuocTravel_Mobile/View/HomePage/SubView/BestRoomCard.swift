@@ -45,7 +45,6 @@ class BestRoomCard: UIView {
     
     private lazy var ratingBound: UIView = {
         let view = UIView()
-        view.backgroundColor = .green
         return view
     }()
     
@@ -75,6 +74,37 @@ class BestRoomCard: UIView {
         return view
     }()
     
+    private lazy var rating1: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage.init(named: "star")?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor(red: 255/255, green: 235/255, blue: 141/255, alpha: 1)
+        return image
+    }()
+    private lazy var rating2: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage.init(named: "star")?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor(red: 254/255, green: 212/255, blue: 107/255, alpha: 1)
+        return image
+    }()
+    private lazy var rating3: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage.init(named: "star")?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor(red: 251/255, green: 181/255, blue: 61/255, alpha: 1)
+        return image
+    }()
+    private lazy var rating4: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage.init(named: "star")?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor(red: 250/255, green: 158/255, blue: 27/255, alpha: 1)
+        return image
+    }()
+    private lazy var rating5: UIImageView = {
+        let image = UIImageView()
+        image.image = UIImage.init(named: "star")?.withRenderingMode(.alwaysTemplate)
+        image.tintColor = UIColor(red: 165/255, green: 165/255, blue: 165/255, alpha: 1)
+        return image
+    }()
+    
     private func setupReview() {
         self.addSubview(self.imageView)
         
@@ -92,6 +122,11 @@ class BestRoomCard: UIView {
         self.centerBound.addSubview(self.bookNowButton)
         
         self.markBound.addSubview(self.markTitle)
+        self.ratingBound.addSubview(self.rating1)
+        self.ratingBound.addSubview(self.rating2)
+        self.ratingBound.addSubview(self.rating3)
+        self.ratingBound.addSubview(self.rating4)
+        self.ratingBound.addSubview(self.rating5)
         
         self.priceLabel.snp.makeConstraints { (make) in
             make.left.equalTo(10)
@@ -112,29 +147,65 @@ class BestRoomCard: UIView {
             make.width.height.greaterThanOrEqualTo(0)
         }
         
+        let starSize = 25
+        let ratingGap = 5
+        
         self.ratingBound.snp.makeConstraints { (make) in
-            make.top.left.right.equalToSuperview()
-            make.height.equalTo(30)
+            make.top.equalToSuperview()
+            make.height.equalTo(starSize)
+            make.width.greaterThanOrEqualTo(0)
+            make.centerX.equalToSuperview()
         }
         
-        self.detailButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self.ratingBound.snp.bottom).offset(20)
-            make.centerX.equalToSuperview()
-            make.width.equalTo(120)
-            make.height.equalTo(self.buttonHeight)
+        self.rating1.snp.remakeConstraints { (maker) in
+            maker.top.bottom.equalToSuperview()
+            maker.leading.equalToSuperview()
+            maker.width.equalTo(starSize)
         }
         
-        self.bookNowButton.snp.makeConstraints { (make) in
-            make.top.equalTo(self.detailButton.snp.bottom).offset(5)
-            make.centerX.equalToSuperview()
-            make.width.equalTo(120)
-            make.height.equalTo(self.buttonHeight)
-            make.bottom.equalToSuperview().priority(.medium)
+        self.rating2.snp.remakeConstraints { (maker) in
+            maker.top.bottom.equalToSuperview()
+            maker.leading.equalTo(self.rating1.snp.trailing).offset(ratingGap)
+            maker.width.equalTo(starSize)
         }
+        
+        self.rating3.snp.remakeConstraints { (maker) in
+            maker.top.bottom.equalToSuperview()
+            maker.leading.equalTo(self.rating2.snp.trailing).offset(ratingGap)
+            maker.width.equalTo(starSize)
+        }
+        
+        self.rating4.snp.remakeConstraints { (maker) in
+            maker.top.bottom.equalToSuperview()
+            maker.leading.equalTo(self.rating3.snp.trailing).offset(ratingGap)
+            maker.width.equalTo(starSize)
+        }
+        
+        self.rating5.snp.remakeConstraints { (maker) in
+            maker.top.bottom.equalToSuperview()
+            maker.leading.equalTo(self.rating4.snp.trailing).offset(ratingGap)
+            maker.width.equalTo(starSize)
+            maker.trailing.equalToSuperview()
+        }
+        
+//        self.detailButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.ratingBound.snp.bottom).offset(20)
+//            make.centerX.equalToSuperview()
+//            make.width.equalTo(120)
+//            make.height.equalTo(self.buttonHeight)
+//        }
+//
+//        self.bookNowButton.snp.makeConstraints { (make) in
+//            make.top.equalTo(self.detailButton.snp.bottom).offset(5)
+//            make.centerX.equalToSuperview()
+//            make.width.equalTo(120)
+//            make.height.equalTo(self.buttonHeight)
+//            make.bottom.equalToSuperview().priority(.medium)
+//        }
         
         self.centerBound.snp.makeConstraints { (make) in
-            make.center.width.equalToSuperview()
-            make.height.greaterThanOrEqualTo(0)
+            make.center.equalToSuperview()
+            make.height.width.greaterThanOrEqualTo(0)
         }
     }
     

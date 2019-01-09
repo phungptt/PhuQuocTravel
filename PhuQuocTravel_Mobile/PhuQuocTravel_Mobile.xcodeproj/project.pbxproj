@@ -26,6 +26,7 @@
 		3DEC6583218001D000400E8B /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6581218001D000400E8B /* Font+Extension.swift */; };
 		3DEC6585218021B700400E8B /* FloatActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC6584218021B700400E8B /* FloatActionButton.swift */; };
 		3DEC658821802B9E00400E8B /* SearchTripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */; };
+		4381427D21E651E400E34605 /* Segoe ui semibold italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4381427C21E651D900E34605 /* Segoe ui semibold italic.ttf */; };
 		7438581F7F986E8CA45C389E /* Pods_PhuQuocTravel_MobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 188868C732BCB931CEF68F57 /* Pods_PhuQuocTravel_MobileTests.framework */; };
 		D0E62A1718F18DF92092C6BF /* Pods_PhuQuocTravel_Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1DC7DC6F2C70DBF8A8F6261 /* Pods_PhuQuocTravel_Mobile.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		3DEC6584218021B700400E8B /* FloatActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatActionButton.swift; sourceTree = "<group>"; };
 		3DEC658721802B9E00400E8B /* SearchTripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTripsViewController.swift; sourceTree = "<group>"; };
 		411E0AC7D5DA2EE2F3369BA8 /* Pods-PhuQuocTravel_MobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileTests/Pods-PhuQuocTravel_MobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		4381427C21E651D900E34605 /* Segoe ui semibold italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Segoe ui semibold italic.ttf"; sourceTree = "<group>"; };
 		A88B9C3997DA4A447A512834 /* Pods-PhuQuocTravel_MobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhuQuocTravel_MobileUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhuQuocTravel_MobileUITests/Pods-PhuQuocTravel_MobileUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B1DC7DC6F2C70DBF8A8F6261 /* Pods_PhuQuocTravel_Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3B9485CDFA64C12927AB92D /* Pods_PhuQuocTravel_MobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhuQuocTravel_MobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -179,6 +181,7 @@
 		3DEA5A23219BAB39003B7B27 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4381427C21E651D900E34605 /* Segoe ui semibold italic.ttf */,
 				3DEA5A25219BD340003B7B27 /* Oswald-Medium.ttf */,
 				3DEA5A24219BAC29003B7B27 /* Oswald-Light.ttf */,
 			);
@@ -362,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4381427D21E651E400E34605 /* Segoe ui semibold italic.ttf in Resources */,
 				3DA6F4692180009A00003794 /* LaunchScreen.storyboard in Resources */,
 				3DEA5A28219BD72F003B7B27 /* Oswald-Light.ttf in Resources */,
 				3DEA5A26219BD716003B7B27 /* Oswald-Medium.ttf in Resources */,
@@ -675,9 +679,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 898EDDGZNP;
+				DEVELOPMENT_TEAM = WC64T22ANZ;
 				INFOPLIST_FILE = PhuQuocTravel_Mobile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -695,9 +699,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 898EDDGZNP;
+				DEVELOPMENT_TEAM = WC64T22ANZ;
 				INFOPLIST_FILE = PhuQuocTravel_Mobile/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
