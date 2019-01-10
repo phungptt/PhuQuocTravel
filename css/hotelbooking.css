@@ -33,9 +33,11 @@
 }
 
 .room-block {
+    padding-top: 150px;
+}
+.room-block-1 {
     padding-top: 70px;
 }
-
 .booking.booking-inner {
     margin-top: -175px;
     z-index: 9;
@@ -148,7 +150,7 @@ h2.vienxanhhd:after
 	left:175px;
 	
 }
-a.sanpham
+a.destination
 {
 	display:block;
 	position:relative;
@@ -157,13 +159,13 @@ a.sanpham
 	overflow:hidden;
 	margin-bottom:31px;
 }
-a.sanpham:hover .thongtinsanpham
+a.destination:hover .information
 {
 	bottom:31px;
 	opacity: 0.85;
     filter: alpha(opacity=70);
 }
-span.thongtinsanpham
+span.information
 {
 	display:block;
 	width:550px;
@@ -176,7 +178,7 @@ span.thongtinsanpham
 	
 	
 }
-h4.tensanpham
+h4.name
 {
 	color:#FFF;
 	font-weight:600;
@@ -185,16 +187,16 @@ h4.tensanpham
 	font-size:22px;
 	
 }
-.danhmucsanpham
+.description
 {
 	color:#ffefff;
 	font-size:15px;
 	position:relative;
-	padding-top:11px;
+	padding-top:20px;
 	
 	
 }
-.danhmucsanpham:after
+.description:after
 {
 	content:"";
 	width:70px;

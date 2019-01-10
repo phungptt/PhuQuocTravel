@@ -70,18 +70,156 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <!-- === BOOKING === -->
+            <div class="booking booking-inner">
+
+                <div class="container">
+
+                    <div class="booking-wrapper">
+                        <div class="row">
+
+                            <!--=== date arrival ===-->
+
+                            <div class="col-xs-4 col-sm-3">
+                                <div class="date" id="dateArrival" data-text="Arrival">
+                                    <input class="datepicker hasDatepicker" readonly="readonly" id="dp1547114271155">
+                                    <div class="date-value"><span class="day">10</span> <span class="month">Jan</span>
+                                        <span class="year">2019</span></div>
+                                </div>
+                            </div>
+
+                            <!--=== date departure ===-->
+
+                            <div class="col-xs-4 col-sm-3">
+                                <div class="date" id="dateDeparture" data-text="Departure">
+                                    <input class="datepicker hasDatepicker" readonly="readonly" id="dp1547114271156">
+                                    <div class="date-value"><span class="day">11</span> <span class="month">Jan</span>
+                                        <span class="year">2019</span></div>
+                                </div>
+                            </div>
+
+                            <!--=== guests ===-->
+
+                            <div class="col-xs-4 col-sm-2">
+
+                                <div class="guests" data-text="Guests">
+                                    <div class="result">
+                                        <input class="qty-result" type="text" value="2" id="qty-result" readonly="readonly">
+                                        <div class="qty-result-text date-value" id="qty-result-text">2</div>
+                                    </div>
+                                    <!--=== guests list ===-->
+                                    <ul class="guest-list" style="display: none;">
+
+                                        <li class="header">
+                                            Please choose number of guests <span class="qty-apply"><i class="icon icon-cross"></i></span>
+                                        </li>
+
+                                        <!--=== adults ===-->
+
+                                        <li class="clearfix">
+
+                                            <!--=== Adults value ===-->
+
+                                            <div>
+                                                <input class="qty-amount" value="2" type="text" id="ticket-adult"
+                                                    data-value="2" readonly="readonly">
+                                            </div>
+
+                                            <div>
+                                                <span>Adults <small>16+ years</small></span>
+                                            </div>
+
+                                            <!--=== Add/remove quantity buttons ===-->
+
+                                            <div>
+                                                <input class="qty-btn qty-minus" value="-" type="button" data-field="ticket-adult">
+                                                <input class="qty-btn qty-plus" value="+" type="button" data-field="ticket-adult">
+                                            </div>
+
+                                        </li>
+
+                                        <!--=== chilrens ===-->
+
+                                        <li class="clearfix">
+
+                                            <!--=== Adults value ===-->
+
+                                            <div>
+                                                <input class="qty-amount" value="0" type="text" id="ticket-children"
+                                                    data-value="0" readonly="readonly">
+                                            </div>
+
+                                            <!--=== Label ===-->
+
+                                            <div>
+                                                <span>Children <small>2-11 years</small></span>
+                                            </div>
+
+
+                                            <!--=== Add/remove quantity buttons ===-->
+
+                                            <div>
+                                                <input class="qty-btn qty-minus" value="-" type="button" data-field="ticket-children">
+                                                <input class="qty-btn qty-plus" value="+" type="button" data-field="ticket-children">
+                                            </div>
+
+                                        </li>
+
+                                        <!--=== Infants ===-->
+
+                                        <li class="clearfix">
+
+                                            <!--=== Adults value ===-->
+
+                                            <div>
+                                                <input class="qty-amount" value="0" type="text" id="ticket-infants"
+                                                    data-value="0" readonly="readonly">
+                                            </div>
+
+                                            <!--=== Label ===-->
+
+                                            <div>
+                                                <span>Infants <small>Under 2 years</small></span>
+                                            </div>
+
+                                            <!--=== Add/remove quantity buttons ===-->
+
+                                            <div>
+                                                <input class="qty-btn qty-minus" value="-" type="button" data-field="ticket-infants">
+                                                <input class="qty-btn qty-plus" value="+" type="button" data-field="ticket-infants">
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!--=== button ===-->
+
+                            <div class="col-xs-12 col-sm-4">
+                                Book now
+                                <small>Best Prices Guaranteed</small>
+                            </div>
+
+                        </div>
+                        <!--/row-->
+                    </div>
+                    <!--/booking-wrapper-->
+                </div>
+                <!--/container-->
+            </div>
 
             <!--ROOM OVERVIEW-->
             <div class="room-overview">
                 <div class="container">
                     <div class="row m-5">
-                        <div class="col-md-16">
+                        <div class="col-md-12">
                             <!--ROOM BLOCK-->
                             <div class="room-block">
                                 <h2 class="title">
-                                    PHÒNG SUIT HƯỚNG BIỂN
+                                       <p>SALINDA RESORT</p> 
+                                        PHÒNG SUIT HƯỚNG BIỂN 
                                 </h2>
-                                <span>
+                                <p>
                                     Một không gian riêng tư và tách biệt cùng ban công ngoài trời rộng lớn,
                                     phòng Suite Sea View Hotel là nơi lý tưởng để đón hoàng hôn của đảo ngọc Phú
                                     Quốc.
@@ -91,10 +229,10 @@
                                     bờ
                                     biển nguyên
                                     sơ.
-                                </span>
+                                </p>
                             </div>
                             <!--ROOM AMENITIES-->
-                            <div class="room-block room-amenities">
+                            <div class="room-block-1 room-amenities">
                                 <h2 class="title">
                                     TIỆN NGHI VÀ DỊCH VỤ
                                 </h2>
@@ -160,76 +298,169 @@
                                         </figure>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!--NEAR BY-->
-                                <div id="dichvu">
-                                    <div class="container">
-                                        <div class="room-block near-by">
-                                            <h2 class="title">
-                                                ĐỊA ĐIỂM DU LỊCH
-                                            </h2>
+                            <!-- === Room RULES === -->
+                            <div class="room-block-1">
+                                <h2 class="title">QUY ĐỊNH CỦA RESORT</h2>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Check-In</b></strong></p>
                                         </div>
-                                        <div class="row hoatdong">
-                                            <div class="col-sm-6 wow bounceInLeft" data-wow-delay="0.2s">
-                                                <a href="" class="sanpham">
-                                                    <img src="asset/Hotel-booking/Pepper-PQ.jpg" class="img-responsive">
-                                                    <span class="thongtinsanpham ">
-                                                        <h4 class="tensanpham">Vườn Tiêu Phú Quốc</h4>
-                                                        <div class="danhmucsanpham">Hồ tiêu Phú Quốc nổi tiếng cay nồng
-                                                            có vị thơm đậm hơn những loại tiêu trồng ở xứ khác. Người
-                                                            dân luôn thân thiện chào mời bạn tới thăm những vườn tiêu
-                                                            xanh mượt của họ. Tham quan xong bạn có thể mua một ít hồ
-                                                            tiêu khô về làm quà tặng người thân.</div>
-                                                    </span>
-                                                </a>
+                                        <div class="col-md-8">
+                                            <p>14:00 - 22:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Check-out</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>14:00 - 22:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Lưu trữ hành lí</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>14:00 - 22:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Hủy phòng/Trả trước</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>
+                                                Chính sách hủy bỏ và trả trước khác nhau tùy theo loại phòng.
+                                                Vui lòng nhập ngày lưu trú của bạn và kiểm tra các điều kiện của phòng
+                                                bạn yêu cầu.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Trẻ em và giường phụ</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Tất cả trẻ em đều được chào đón.</p>
+                                            <p>Một trẻ em dưới 6 tuổi phải trả 200 mỗi đêm khi sử dụng giường hiện có</p>
+                                            <p>Không có sức chứa cho giường phụ trong phòng.</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Thú cưng</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>Không được phép đem thú cưng trong resort</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- === box === -->
+                                <div class="box">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <p><strong><b>Thông tin bổ sung</b></strong></p>
+                                        </div>
+                                        <div class="col-md-8">
+                                                <p>Nhà hàng sẽ đóng cửa trong dịp Giáng sinh (25-26/12).</p>
+                                                <p>Xin lưu ý rằng chỗ đậu xe không thể được bảo lưu hoặc đảm bảo.</p>
+                                                <p>
+                                                    Đối với đặt phòng theo nhóm hơn 5 phòng tối đa 4 tuần trước khi hủy đến
+                                                    là miễn phí 100%, trong vòng 2 đến 4 tuần miễn phí 50% và trong vòng 2
+                                                    tuần, resort sẽ tính phí đầy đủ cho bạn. Xin lưu ý rằng sesort luôn tính 
+                                                    thuế thành phố trước khi bạn đến với mức giá không hoàn
+                                                    lại hoặc đặt phòng theo nhóm.
+                                                </p>
                                             </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <!--NEAR BY-->
+                            <div class="room-block-1 near-by">
+                                <h2 class="title">
+                                    ĐỊA ĐIỂM DU LỊCH
+                                </h2>
+                            </div>
+                            <div id="dichvu">
+                                <div class="container-nearby">
+                                    <div class="row hoatdong">
+                                        <div class="col-sm-6 wow bounceInLeft" data-wow-delay="0.2s">
+                                            <a href="" class="destination">
+                                                <img src="asset/Hotel-booking/Pepper-PQ.jpg" class="img-responsive">
+                                                <span class="information w-100">
+                                                    <h4 class="name">Vườn Tiêu Phú Quốc</h4>
+                                                    <div class="description">
+                                                        Hồ tiêu Phú Quốc nổi tiếng cay nồng
+                                                        có vị thơm đậm hơn những loại tiêu trồng ở xứ khác. Người
+                                                        dân luôn thân thiện chào mời bạn tới thăm những vườn tiêu
+                                                        xanh mượt của họ. Tham quan xong bạn có thể mua một ít hồ
+                                                        tiêu khô về làm quà tặng người thân.</div>
+                                                </span>
+                                            </a>
+                                        </div>
 
-                                            <div class="col-sm-6 wow bounceInRight" data-wow-delay="0.3s">
-                                                <a href="" class="sanpham">
-                                                    <img src="asset/Hotel-booking/suoi-tranh.jpg" class="img-responsive">
-                                                    <span class="thongtinsanpham ">
-                                                        <h4 class="tensanpham">Suối Tranh</h4>
-                                                        <div class="danhmucsanpham">Từ khoảng tháng 6 đến tháng 9 là
-                                                            thời điểm suối có nhiều nước. Đây là địa điểm tổ chức cắm
-                                                            trại, dã ngoại và tắm thú vị rất được các bạn nước ngoài ưa
-                                                            thích.
+                                        <div class="col-sm-6 wow bounceInRight" data-wow-delay="0.3s">
+                                            <a href="" class="destination">
+                                                <img src="asset/Hotel-booking/suoi-tranh.jpg" class="img-responsive">
+                                                <span class="information w-100">
+                                                    <h4 class="name">Suối Tranh</h4>
+                                                    <div class="description">Từ khoảng tháng 6 đến tháng 9 là
+                                                        thời điểm suối có nhiều nước. Đây là địa điểm tổ chức cắm
+                                                        trại, dã ngoại và tắm thú vị rất được các bạn nước ngoài ưa
+                                                        thích.
 
-                                                        </div>
-                                                    </span>
-                                                </a>
-                                            </div>
+                                                    </div>
+                                                </span>
+                                            </a>
+                                        </div>
 
-                                            <div class="col-sm-6 wow bounceInLeft" data-wow-delay="0.4s">
-                                                <a href="" class="sanpham">
-                                                    <img src="asset/Hotel-booking/Sao-Beach.jpg" class="img-responsive">
-                                                    <span class="thongtinsanpham ">
-                                                        <h4 class="tensanpham">Bãi Sao</h4>
-                                                        <div class="danhmucsanpham">Đây thuộc hàng những bãi tắm đẹp
-                                                            nhất tại Phú Quốc, nằm gần suối Tranh, nơi sở hữu bờ cát
-                                                            trắng mịn cong cong hình vầng trăng dài hơn 7 km.</div>
-                                                    </span>
-                                                </a>
-                                            </div>
+                                        <div class="col-sm-6 wow bounceInLeft" data-wow-delay="0.4s">
+                                            <a href="" class="destination ">
+                                                <img src="asset/Hotel-booking/Sao-Beach.jpg" class="img-responsive">
+                                                <span class="information w-100">
+                                                    <h4 class="name">Bãi Sao</h4>
+                                                    <div class="description ">Đây thuộc hàng những bãi tắm đẹp
+                                                        nhất tại Phú Quốc, nằm gần suối Tranh, nơi sở hữu bờ cát
+                                                        trắng mịn cong cong hình vầng trăng dài hơn 7 km.</div>
+                                                </span>
+                                            </a>
+                                        </div>
 
-                                            <div class="col-sm-6 wow bounceInRight" data-wow-delay="0.5s">
-                                                <a href="" class="sanpham">
-                                                    <img src="asset/Hotel-booking/Mui-ganh-dau.jpg" class="img-responsive">
-                                                    <span class="thongtinsanpham">
-                                                        <h4 class="tensanpham">Mũi Gành Dầu</h4>
-                                                        <div class="danhmucsanpham">Mũi đất nhô ra biển ở Tây Bắc đảo
-                                                            thu hút du khách bởi vẻ đẹp thiên nhiên hoang sơ và đặc
-                                                            trưng nhất. Gành Dầu có bãi tắm hình cánh cung trải dài 500
-                                                            m, nước biển trong vắt với làn cát mịn, sóng nhỏ. Từ đây,
-                                                            có thể tham quan các địa điểm làm cá cơm trên con đường
-                                                            chạy dọc ven biển mát lộng.</div>
-                                                    </span>
-                                                </a>
-
-
-
-                                                <!--container-->
-
-                                            </div>
+                                        <div class="col-sm-6 wow bounceInRight" data-wow-delay="0.5s">
+                                            <a href="" class="destination ">
+                                                <img src="asset/Hotel-booking/Mui-ganh-dau.jpg" class="img-responsive">
+                                                <span class="information w-100">
+                                                    <h4 class="name">Mũi Gành Dầu</h4>
+                                                    <div class="description ">Mũi đất nhô ra biển ở Tây Bắc đảo
+                                                        thu hút du khách bởi vẻ đẹp thiên nhiên hoang sơ và đặc
+                                                        trưng nhất. Gành Dầu có bãi tắm hình cánh cung trải dài 500
+                                                        m, nước biển trong vắt với làn cát mịn, sóng nhỏ. Từ đây,
+                                                        có thể tham quan các địa điểm làm cá cơm trên con đường
+                                                        chạy dọc ven biển mát lộng.</div>
+                                                </span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
