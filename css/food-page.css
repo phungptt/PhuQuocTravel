@@ -16,7 +16,7 @@
     letter-spacing: 0.2em;
 }
 .tittle-section{
-    padding: 115px 0 100px;
+    padding: 80px 0 80px;
 }
 .sec-title{
     font-family: 'Oswald', sans-serif;
@@ -146,5 +146,6 @@
 
 }
 .disscount-item-content{
-    
+    box-shadow: 0px 1px 20px #eee, 0px 2px 1px #eee, 0px 2px 15px #ddd;
+
 }
