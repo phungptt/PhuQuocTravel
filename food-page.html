@@ -322,6 +322,23 @@
 
     imgLoveList.height(widthImg);
     $(".love-image-fade").height(widthImg);
+
+    function resizeBanner() {
+        var _window = $(window),
+            heightwindow = _window.height(),
+            heightHeader = $(".my-header").height();
+        $("#food-page .banner").css('height', heightwindow - heightHeader);
+    }
+    
+    $(function(){
+       
+        
+        resizeBanner();
+    });
+
+    $(window).resize(function () {
+        resizeBanner();
+    });
 </script>
 
 </html>
