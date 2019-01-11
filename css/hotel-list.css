@@ -188,6 +188,7 @@ select.search-style-input-hotel option{
 .hotel-item-image img{
    width: 100%;
    height: auto;
+   max-height: 350px;
 }
 .hotel-name{
     position: absolute;

@@ -139,7 +139,7 @@ Vue.component('list-hotel', {
 Vue.component('list-hotel-page', {
     props: ['item'],
     template: `
-    <div class="hotel-item col-md-12">
+    <div class="hotel-item col-md-12 mb-5">
         <div class="d-flex">
             <div class="hotel-images-wapper">
                 <div class="hotel-item-image position-relative">
@@ -163,25 +163,25 @@ Vue.component('list-hotel-page', {
                     </div>
                     <div class="standard-icon">
                         <div class="icon-note">
-                            <img src="asset/icon/wifi-connection-signal-symbol.png">
+                            <img src="asset/Hotel-booking/icon/wifi-connection-signal-symbol.png">
                             <div class="note-hover">
                                 Free wifi
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/icon/sunbed.png">
+                            <img src="asset/Hotel-booking/icon/sunbed.png">
                             <div  class="note-hover">
                                 Gần biển
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/icon/swimming-silhouette.png">
+                            <img src="asset/Hotel-booking/icon/swimming-silhouette.png">
                             <div class="note-hover">
                                 Hồ bơi
                             </div>
                         </div>
                         <div class="icon-note">
-                            <img src="asset/icon/shuffer-bus.png">
+                            <img src="asset/Hotel-booking/icon/shuffer-bus.png">
                             <div class="note-hover">
                                 Đưa đón tại sân bay
                             </div>
