@@ -6,8 +6,10 @@ target 'PhuQuocTravel_Mobile' do
   use_frameworks!
 
   # Pods for PhuQuocTravel_Mobile
-  pod 'SnapKit', '~>4.0.0'
+  pod 'SnapKit'
   pod "Floaty", "~> 4"
+  pod 'RxSwift',    '~> 4.0'
+  pod 'RxCocoa',    '~> 4.0'
 
   target 'PhuQuocTravel_MobileTests' do
     inherit! :search_paths

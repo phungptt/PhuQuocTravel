@@ -1,0 +1,350 @@
+.container {
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #222;
+    font-weight: 300;
+
+}
+
+.carousel-inner img {
+
+    width: 100%;
+    height: 100%;
+}
+
+.room-image {
+    margin: 0 auto;
+}
+
+.room-overview {
+
+    font-size: 15px;
+    line-height: 1.5;
+    color: #222;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+.room-block {
+    padding-top: 0px;
+}
+.room-block-1 {
+    padding-top: 70px;
+}
+.booking.booking-inner {
+    margin-top: -175px;
+    z-index: 9;
+    position: relative;
+    color: #fff;
+}
+.booking.booking-inner {
+    padding-bottom: 0;
+}
+.booking {
+    padding-top: 0;
+}
+
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: inherit;
+    padding-bottom: 70px;
+    text-align: center;
+    position: relative;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+h2.title::before {
+    bottom: 25px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+}
+
+h2.title::after {
+    bottom: 30px;
+    width: 100px;
+    height: 1px;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ddd;
+}
+
+.title span {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+figure figcaption {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+span.hotelicon-air-condition::before {
+
+    font-size: 50px;
+    text-align: center;
+
+
+}
+
+
+
+.hotelicon {
+
+    font-style: normal !important;
+    font-weight: normal !important;
+    font-variant: normal !important;
+    text-transform: none !important;
+
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+}
+
+a.nut.welcome.btn.btn-default:hover
+{
+	color:#141414;
+	background:#666666;
+	border-color:#141414;
+	animation:pulse 1s;
+}
+
+h2.vienxanhhd
+{
+	
+	color:#2e2e2e;
+	font-weight:600px;
+	text-transform:uppercase;
+	font-size:28px;
+	position:relative;
+	padding-top:21px;
+	padding-bottom:71px;
+	left:10px;
+}
+h2.vienxanhhd:after
+{
+	content:"";
+	width:65px;
+	height:5px;
+	background:#666666;
+	position:absolute;
+	top:5px;
+	left:175px;
+	
+}
+a.destination
+{
+	display:block;
+	position:relative;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	margin-bottom:31px;
+}
+a.destination:hover .information
+{
+	bottom:31px;
+	opacity: 0.85;
+    filter: alpha(opacity=70);
+}
+span.information
+{
+	display:block;
+	width:550px;
+	position:absolute;
+	bottom:0px;
+	background:#666666;
+	padding:35px 32px;
+	transform:1s;
+	bottom:-400px;
+	
+	
+}
+h4.name
+{
+	color:#FFF;
+	font-weight:600;
+	text-transform:uppercase;
+	margin-bottom:10px;
+	font-size:22px;
+	
+}
+.description
+{
+	color:#ffefff;
+	font-size:15px;
+	position:relative;
+	padding-top:20px;
+	
+	
+}
+.description:after
+{
+	content:"";
+	width:70px;
+	height:3px;
+	background:#111011;
+	position:absolute;
+	top:-5px;
+	left:0px;
+}
+.number
+{
+	border-top:dashed 2px #666666;
+	margin-top:94px;
+	background:url(images/earth-earth-at-night-night-lights-41949.jpeg) repeat-x 0px 115px;
+	min-height:418px;
+	/*margin-bottom:94px;*/
+	
+}
+.conso
+{
+	width:100%;
+	height:311px;
+	border: solid 10px #5ce5cb;
+	text-align:center;
+	margin-top:46px;
+}
+.so
+{
+	font-family: 'Playfair Display', serif;
+	padding-top:57px;
+	margin-top:46px;
+	color:#FFF;
+	font-size:28px;
+}
+.chu
+{
+	font-family: 'Roboto', sans-serif;
+	color:#5ce5cb;
+	font-size:22px;
+}
+
+/** Vue Component CSS **/
+/*TOPBAR*/
+.my-header {
+    background: #333;
+    width: 100%;
+}
+
+.topbar-logo a {
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.topbar-menu .menu-item {
+    margin-right: 1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.topbar-menu .menu-item:last-child {
+    margin-right: 0;
+}
+
+.topbar-menu .menu-item:hover {
+    color: #ddd;
+}
+
+
+
+/*FOOTER*/
+.my-footer {
+    background: #333;
+    width: 100%;
+}
+
+.footer-info h4 {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.footer-icon a {
+    color: white;
+}
+
+.footer-icon a:last-child i {
+    margin-right: 0 !important;
+}
+
+.copyright {
+    background: #333;
+    font-style: italic;
+    border-top: 1px solid #555;
+}
+
+.copyright a {
+    text-decoration: none;
+}
+
+
+
+
+/*LOVE LIST*/
+.love-post-wrapper {
+    position: relative;
+    box-shadow: 0px 0px 7px #ccc;
+}
+
+.love-post-wrapper:hover {
+    position: relative;
+    box-shadow: 0px 0px 12px #888;
+}
+
+.love-image .post-image {
+    width: 100%;
+    overflow: hidden;
+    background-position: center !important;
+    background-size: cover !important;
+    cursor: pointer;
+}
+
+.love-info {
+    padding: .4em .7em;
+    color: #777;
+}
+
+.love-info a {
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.love-info .love-time {
+    font-size: .75rem;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+.love-list-control .dropdown {
+    cursor: pointer;
+}
+
+.love-list-control .dropdown-toggle:after {
+    border: 0;
+}
+
+.love-list-control .dropdown-menu {
+    right: 0 !important;
+    left: unset !important;
+}
+
+/** Main color: #2196f3 **/
