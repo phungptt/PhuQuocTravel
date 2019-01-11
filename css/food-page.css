@@ -30,6 +30,7 @@
     background: url(../asset/food-page/icon/shape-4.png) center no-repeat;
     margin-bottom: 20px;
     margin-top: 10px;
+    margin-bottom: 50px
 }
 .sec-title-content{
     text-align: center;
@@ -74,7 +75,7 @@
     background: white;
     left: 50%;
     top: -100px;
-    box-shadow: 5px 5px 73px rgba(31, 30, 30, 0.1);
+    box-shadow: 10px 10px 73px 0px rgba(31, 30, 30, 0.5);
     transform: translateX(-50%);
 }
 .food-menu .menu-item{
@@ -135,5 +136,15 @@
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    
+}
+/*DISCOUNT*/
+.disscount-item-content span{
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 550;
+
+}
+.disscount-item-content{
     
 }
