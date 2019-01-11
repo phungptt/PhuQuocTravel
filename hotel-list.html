@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel list</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/hotel-list.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/component.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="hotel-list" id="hotel-list">
+            <my-header></my-header>
+            <div class="banner w-100 position-relative">
+                <div class="banner-text position-absolute text-center">
+                    <img src="asset/hotel-list/bed.png" alt="">
+                    <h5 class="site-name">Hotel</h5>
+                </div>
+                <!--Search Tab-->
+                <div class="search-container">
+                    <form action="" class="d-flex flex-lg-row flex-column align-items-lg-center align-items-lg-start justify-content-center justify-content-start mx-auto h-100">
+                        <div class="search-name d-flex flex-column justify-content-lg-center">
+                            <div>HOTEL</div>
+                            <input type="text" class="form-control search-style-input-hotel">
+                        </div>
+                        <div class="find-item search-name">
+                            <div>LOCATION</div>
+                            <select name="location" id="" class="form-control search-style-input-hotel">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class="find-item search-name">
+                            <div>LOW PRICE</div>
+                            <select name="location" id="" class="form-control search-style-input-hotel">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <div class="find-item search-name">
+                            <div>HIGH PRICE</div>
+                            <select name="location" id="" class="form-control search-style-input-hotel">
+                                <option value="">All</option>
+                            </select>
+                        </div>
+                        <button class="button-search search-name">
+                            search
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="tittle-section">
+                <div class="sec-title m-0">
+                    <p>WELCOME MESSAGE</p>
+                    <div class="sec-title-line"></div>
+                </div>
+                <div class="sec-title-content">
+                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis nibhid
+                        elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                    <p>maccumsa ipsum velit. Namec tellus adio tincidunt auctor a ornare odioed nauris vitae era.</p>
+                </div>
+            </div>
+            <div class="list-hotel-wrap">
+                <div class="list-hotel-header mb-5">
+                    BOOK YOUR HOTEL
+                </div>
+                <div class="list-hotel-content pt-5">
+                    <div class="row">
+                        <list-hotel-page v-for="h in hotel" v-bind:item="h" v-bind:key="h.name">
+                            </list-hotel-page>
+                    </div>
+                </div>
+            </div>
+
+            <my-footer></my-footer>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    //Vue JS
+    var hotels = new Vue({
+        el: "#hotel-list",
+        data: {
+            hotel: hotel
+        }
+    });
+
+    //WOW STYLE
+    new WOW().init();
+
+    function resizeBanner() {
+        var _window = $(window),
+            heightwindow = _window.height(),
+            heightHeader = $(".my-header").height();
+        $("#hotel-list .banner").css('height', heightwindow - heightHeader);
+    }
+    
+    $(function(){
+        //hover icon-note
+        var iconNote = $(".icon-note");
+        iconNote.mouseover(function () {
+            $(this).find('.note-hover').css('display', 'block');
+        });
+        iconNote.mouseleave(function () {
+            $(this).find('.note-hover').css('display', 'none');
+        });
+        
+        resizeBanner();
+    });
+
+    $(window).resize(function () {
+        resizeBanner();
+    });
+</script>

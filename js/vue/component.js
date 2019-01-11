@@ -136,6 +136,80 @@ Vue.component('list-hotel', {
     `
 });
 
+Vue.component('list-hotel-page', {
+    props: ['item'],
+    template: `
+    <div class="hotel-item col-md-12">
+        <div class="d-flex">
+            <div class="hotel-images-wapper">
+                <div class="hotel-item-image position-relative">
+                    <img :src="item.suburl" alt="">
+                    <span class="hotel-name">{{item.name}}</span>
+                </div>
+            </div>
+            <div class="hotel-information-wapper pt-2">
+                <div class="hotel-item-content">
+                    <div class="prices">{{item.price}}</div>
+                    <span>per night</span>
+                    <div class="rating rating_4">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <div class="describle">
+                        <p>{{item.content}}</p>
+                    </div>
+                    <div class="standard-icon">
+                        <div class="icon-note">
+                            <img src="asset/icon/wifi-connection-signal-symbol.png">
+                            <div class="note-hover">
+                                Free wifi
+                            </div>
+                        </div>
+                        <div class="icon-note">
+                            <img src="asset/icon/sunbed.png">
+                            <div  class="note-hover">
+                                Gần biển
+                            </div>
+                        </div>
+                        <div class="icon-note">
+                            <img src="asset/icon/swimming-silhouette.png">
+                            <div class="note-hover">
+                                Hồ bơi
+                            </div>
+                        </div>
+                        <div class="icon-note">
+                            <img src="asset/icon/shuffer-bus.png">
+                            <div class="note-hover">
+                                Đưa đón tại sân bay
+                            </div>
+                        </div>                                                               
+                    </div>
+                    <div class="intro-button style-intro-button mt-4">
+                        <div class="button-bcg "></div>
+                        <a href="#">
+                            BOOK
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="offer-reviews">
+                        <div class="offer-reviews-content d-flex flex-column align-items-center justify-content-center">
+                            <div class="offer-reviews-title text-uppercase"><b>very good</b></div>
+                            <div class="offer-reviews-subtitle">100 reviews</div>
+                        </div>
+                        <div class="offer-reviews-rating text-center ml-3">{{item.score}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    `
+});
+
 Vue.component('love-list', {
     props: ['items'],
     template: `
