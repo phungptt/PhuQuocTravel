@@ -25,27 +25,35 @@ var topDestinations = [
     hotel = [
         {
             image: "asset/marriott-resort.jpg",
-            price: "70$",
+            suburl: "asset/hotel-list/marriott-resort.jpg",
+            price: "$70",
             content: "Một trong những lựa chọn hàng đầu ở Dương Đông. Với thiết kế lạ mắt của kiến trúc sư Bill Bensley, JW Marriott Phu Quoc Emerald Bay Resort & Spa nằm dọc theo bờ biển của khu vực bãi biển Khem và có bãi biển riêng",
             name: "Marriott Resort",
+            score: "8.1"
         },
         {
             image: "asset/green-garden-2-resort.jpg",
-            price: "70$",
+            suburl: "asset/hotel-list/green-garden-2-resort.jpg",
+            price: "$70",
             content: "Một trong những lựa chọn hàng đầu ở Dương Đông. Với thiết kế lạ mắt của kiến trúc sư Bill Bensley, JW Marriott Phu Quoc Emerald Bay Resort & Spa nằm dọc theo bờ biển của khu vực bãi biển Khem và có bãi biển riêng",
             name: "Green Garden",
+            score: "8.3"
         },
         {
             image: "asset/salinda-resort.jpg",
-            price: "70$",
+            suburl: "asset/hotel-list/salinda-resort.jpg",
+            price: "$70",
             content: "Một trong những lựa chọn hàng đầu ở Dương Đông. Với thiết kế lạ mắt của kiến trúc sư Bill Bensley, JW Marriott Phu Quoc Emerald Bay Resort & Spa nằm dọc theo bờ biển của khu vực bãi biển Khem và có bãi biển riêng",
             name: "Salinda Resort",
+            score: "9.1"
         },
         {
             image: "asset/the-sell-resort.jpg",
-            price: "70$",
+            suburl: "asset/hotel-list/the-sell-resort.jpg",
+            price: "$70",
             content: "Một trong những lựa chọn hàng đầu ở Dương Đông. Với thiết kế lạ mắt của kiến trúc sư Bill Bensley, JW Marriott Phu Quoc Emerald Bay Resort & Spa nằm dọc theo bờ biển của khu vực bãi biển Khem và có bãi biển riêng",
             name: "The Shell Resort",
+            score: "8.9"
         },
     ],
 
