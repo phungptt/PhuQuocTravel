@@ -62,10 +62,7 @@ Vue.component('top-destination', {
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                 </div>
-                <div class="intro-button mt-5">
-                    <div class="button-bcg"></div>
-                    <a href="#">Xem thêm ...</a>   
-                </div>
+                
             </div>
         </div>
     </div>

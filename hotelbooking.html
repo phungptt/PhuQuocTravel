@@ -34,7 +34,7 @@
         <div class="hotel-detail" id="hotel-detail">
             <my-header></my-header>
             <!--HEADER-->
-            <div id="demo" class="carousel slide " data-ride="carousel">
+            <div id="hotel-detail" class="carousel slide " data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -340,6 +340,8 @@
 
     </div>
 </body>
+
+</html>
 <script>
     //WOW STYLE
     new WOW().init();
@@ -352,28 +354,56 @@
         }
     });
 
-    var imgLoveList = $(".love-image .post-image"),
-        widthImg = imgLoveList.width();
+    $(document).ready(function () {
+        //hover icon-note
+        var iconNote = $(".icon-note");
+        iconNote.mouseover(function () {
+            $(this).find('.note-hover').css('display', 'block');
+        });
+        iconNote.mouseleave(function () {
+            $(this).find('.note-hover').css('display', 'none');
+        });
 
-    imgLoveList.height(widthImg);
-    $(".love-image-fade").height(widthImg);
+        $(window).scroll(function () {
+            var x = $(this).scrollTop();
+            var intro = $(".intro").offset().top;
+            $('.intro-background').css('background-position', '0% ' + parseInt((x - intro) / 2 - 180) +
+                'px');
+        });
 
-    function resizeBanner() {
         var _window = $(window),
             heightwindow = _window.height(),
-            heightHeader = $(".my-header").height();
-        $("#hotel-detail .banner").css('height', heightwindow - heightHeader);
-    }
-    
-    $(function(){
-       
-        
-        resizeBanner();
-    });
+            widthwindow = _window.width(),
 
-    $(window).resize(function () {
-        resizeBanner();
-    });
+            iconPlay = $(".popup-video"),
+            videoIntro = $(".video-intro-play"),
+            contentVideoIntro = $(".video-intro-content"),
+            videoPlay = $("#video-intro"),
+            iconClose = $(".btn-close-video");
+
+        $("#demo .carousel-item").css("height", heightwindow);
+        videoIntro.css('height', heightwindow);
+        videoIntro.css('width', widthwindow);
+
+        iconPlay.on('click', function () {
+            videoIntro.css('display', 'block');
+            videoPlay.get(0).currentTime = 0;
+            videoPlay.get(0).play()
+        });
+
+        iconClose.on('click', function () {
+            videoPlay.get(0).pause()
+            videoIntro.css('display', 'none');
+        });
+
+        $(window).resize(function () {
+            var _window = $(window),
+                heightwindow = _window.height(),
+                widthwindow = _window.width(),
+                videoIntro = $(".video-intro-play");
+
+            $("#hotel-detail .carousel-item").css("height", heightwindow);
+            videoIntro.css('height', heightwindow);
+            videoIntro.css('width', widthwindow);
+        });
 </script>
-
-</html>
