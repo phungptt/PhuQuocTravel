@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/food-page.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gentium+Book+Basic" rel="stylesheet">
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="js/vue/component.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="food-page" id="food-page">
+            <!--Header-->
+            <my-header></my-header>
+            <!--BANNER-->
+            <div class="banner w-100 position-relative" style="height: 900px;">
+                <img src="asset/food-page/slide-img-1.jpg" alt="" class="style-item w-100 h-100">
+                <div class="banner-text position-absolute text-center" style="top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+                    <img src="asset/food-page/icon/slide-icon.png" alt="">
+                    <p>EAT THE WHOLE WORLD</p>
+                </div>
+            </div>
+            <!--TITLE-->
+            <div class="tittle-section">
+                <div class="sec-title m-0">
+                    <p>Walk around and find what you love</p>
+                    <div class="sec-title-line"></div>
+                </div>
+                <div class="sec-title-content ">
+                    <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis nibhid
+                        elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.</p>
+                    <p>maccumsa ipsum velit. Namec tellus adio tincidunt auctor a ornare odioed nauris vitae era.</p>
+                </div>
+            </div>
+            <!--GALLERY-->
+            <div class="gallery-section d-flex m-auto">
+                <div class="column col-md-8 col-sm-8 col-xs-12 p-0">
+                    <div class="gallery-breakfast position-relative ">
+                        <img src="asset/food-page/gallery-section-1.jpg " alt="">
+                        <span class="gallery-content-style">BREAKFAST</span>
+                    </div>
+                </div>
+                <div class="column col-md-4 col-sm-4 col-xs-12 p-0 d-flex flex-column justify-content-between">
+                    <div class="galleyry-dinner position-relative w-100">
+                        <img src="asset/food-page/gallery-section-2.jpg" alt="" class="w-100">
+                        <span class="gallery-content-style">DINNER</span>
+                    </div>
+                    <div class="gallery-drinks position-relative w-100 h-100">
+                        <img src="asset/food-page/gallery-section-5.jpg" alt="" class="w-100 h-100">
+                        <div class="gallery-content-style">
+                            <span>CAFÉ</span>
+                            <p>&</p>
+                            <span>DESSERT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--MENU-->
+            <div class="tittle-section">
+                <div class="sec-title m-0">
+                    <p>Something you must try</p>
+                    <div class="sec-title-line"></div>
+                </div>
+            </div>
+            <div class="menu-section position-relative d-flex w-100 food-menu">
+                <div class="menu-background"></div>
+                <div class="menu-container">
+                    <div class="row m-0">
+                        <!--Item1-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                <div class="menu-item-content">
+                                    <div class="item-price">$24.95</div>
+                                    <h3 class="item-title">Grillet American</h3>
+                                    <div class="menu-line"></div>
+                                    <p class="item-description">
+                                        Pork fillet, ginger, garlic, honey, pepper &amp; canola oil.creamy chesapeake
+                                        crab dip with artichoke, baked and topped with cheddar cheese, with crusty
+                                        bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped
+                                        with cheddar cheese.
+                                    </p>
+                                </div>
+                                <div class="menu-item-img position-relative">
+                                    <div class="divider-shape-down"></div>
+                                    <img src="asset/food-page/menu-item-1.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item 2-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                    <div class="menu-item-img position-relative">
+                                        <div class="divider-shape-up"></div>
+                                        <img src="asset/food-page/menu-item-2.jpg" alt="" class="w-100">
+                                    </div>
+                                <div class="menu-item-content">
+                                        <div class="item-price">$38.95</div>
+                                        <h3 class="item-title">Roast Sea Trout</h3>
+                                        <div class="menu-line"></div>
+                                        <p class="item-description">
+                                            Roast trout, English asparagus, watercress &amp; royals, creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese..
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--Item 3-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                <div class="menu-item-content">
+                                    <div class="item-price">$13.95</div>
+                                    <h3 class="item-title">Grilled Seafood Paella</h3>
+                                    <div class="menu-line"></div>
+                                    <p class="item-description">
+                                        Pork fillet, ginger, garlic, honey, pepper & canola oil.creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese.
+                                    </p>
+                                </div>
+                                <div class="menu-item-img position-relative">
+                                    <div class="divider-shape-down"></div>
+                                    <img src="asset/food-page/menu-item-3.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item 4-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                <div class="menu-item-content">
+                                    <div class="item-price">$13.95</div>
+                                    <h3 class="item-title">Grilled Seafood Paella</h3>
+                                    <div class="menu-line"></div>
+                                    <p class="item-description">
+                                        Pork fillet, ginger, garlic, honey, pepper & canola oil.creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese.
+                                    </p>
+                                </div>
+                                <div class="menu-item-img position-relative">
+                                    <div class="divider-shape-down"></div>
+                                    <img src="asset/food-page/menu-item-5.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                        <!--Item 5-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                    <div class="menu-item-img position-relative">
+                                        <div class="divider-shape-up"></div>
+                                        <img src="asset/food-page/menu-item-4.jpg" alt="" class="w-100">
+                                    </div>
+                                <div class="menu-item-content">
+                                        <div class="item-price">$38.95</div>
+                                        <h3 class="item-title">Roast Sea Trout</h3>
+                                        <div class="menu-line"></div>
+                                        <p class="item-description">
+                                            Roast trout, English asparagus, watercress &amp; royals, creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese..
+                                        </p>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--Item 6-->
+                        <div class="col-xs-12 col-sm-6 col-md-4 p-0 d-flex">
+                            <div class="menu-item">
+                                <div class="menu-item-content">
+                                    <div class="item-price">$13.95</div>
+                                    <h3 class="item-title">Grilled Seafood Paella</h3>
+                                    <div class="menu-line"></div>
+                                    <p class="item-description">
+                                        Pork fillet, ginger, garlic, honey, pepper & canola oil.creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese, with crusty bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped with cheddar cheese.
+                                    </p>
+                                </div>
+                                <div class="menu-item-img position-relative">
+                                    <div class="divider-shape-down"></div>
+                                    <img src="asset/food-page/menu-item-6.jpg" alt="" class="w-100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Footer-->
+            <my-footer></my-footer>
+        </div>
+    </div>
+</body>
+
+<script>
+    //WOW STYLE
+    new WOW().init();
+
+    //Vue
+    var destinations = new Vue({
+        el: "#food-page",
+        data: {
+            loveList: loveList
+        }
+    });
+
+    var imgLoveList = $(".love-image .post-image"),
+        widthImg = imgLoveList.width();
+
+    imgLoveList.height(widthImg);
+    $(".love-image-fade").height(widthImg);
+</script>
+
+</html>
