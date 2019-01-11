@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin-ext">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hotelbooking.css">
     <link rel="stylesheet" href="css/ihover.css">
+    <link rel="stylesheet" href="css/hotel-list.css">
+    <link rel="stylesheet" href="css/style.css">
+
 
 
     <script src="js/popper.min.js"></script>
@@ -33,7 +34,7 @@
         <div class="hotel-detail" id="hotel-detail">
             <my-header></my-header>
             <!--HEADER-->
-            <div id="demo" class="carousel slide" data-ride="carousel">
+            <div id="demo" class="carousel slide " data-ride="carousel">
                 <!-- The slideshow -->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -77,29 +78,24 @@
                     <div class="row m-5">
                         <div class="col-md-12">
                             <!--ROOM BLOCK-->
-                            <div class="room-block">
-                                <h2 class="title">
-                                       <p>SALINDA RESORT</p> 
-                                        SUITE SEA VIEW HOTEL
-                                       
-                                </h2>
-                                <p>
-                                    Một không gian riêng tư và tách biệt cùng ban công ngoài trời rộng lớn,
-                                    phòng Suite Sea View Hotel là nơi lý tưởng để đón hoàng hôn của đảo ngọc Phú
-                                    Quốc.
-                                    Không gian nội thất tràn ngập ánh sáng cùng giường ngủ lớn và được thiết kế êm
-                                    ái,
-                                    tận hưởng cuộc sống thượng lưu trên chiếc ghế sofa dễ chịu và hướng tầm nhìn ra
-                                    bờ
-                                    biển nguyên
-                                    sơ.
+                            <div>
+                                <div class="sec-title m-0"  style="padding: 70px 0 70px">
+                                    <p style ="font-size: 50px">SALINDA HOTEL</p>
+                                    <div class="sec-title-line"></div>
+                                </div>
+                                <p class="item-description">
+                                    Pork fillet, ginger, garlic, honey, pepper &amp; canola oil.creamy chesapeake
+                                    crab dip with artichoke, baked and topped with cheddar cheese, with crusty
+                                    bread for dipping. creamy chesapeake crab dip with artichoke, baked and topped
+                                    with cheddar cheese.
                                 </p>
                             </div>
                             <!--ROOM AMENITIES-->
-                            <div class="room-block-1 room-amenities">
-                                <h2 class="title">
-                                    ROOM AMINITIES
-                                </h2>
+                            <div class="room-amenities">
+                                <div class="sec-title m-0" style="padding: 70px 0 70px">
+                                    <p style="font-size:40px">Roomtities</p>
+                                    <div class="sec-title-line"></div>
+                                </div>
                                 <div class="row">
                                     <!--Item-->
                                     <div class="col-xs-6 col-sm-2">
@@ -165,16 +161,19 @@
                             </div>
 
                             <!-- === Room RULES === -->
-                            <div class="room-block-1">
-                                <h2 class="title">HOUSE RULES</h2>
+                            <div>
+                                <div class="sec-title m-0" style="padding: 80px 0 80px">
+                                    <p style="font-size: 40px">House rules</p>
+                                    <div class="sec-title-line"></div>
+                                </div>
                                 <!-- === box === -->
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Check-In</b></strong></p>
+                                            <h3 class="item-title">Check-in</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>14:00 - 22:00</p>
+                                            <p class="item-description">14:00 - 22:00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -182,10 +181,10 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Check-out</b></strong></p>
+                                                <h3 class="item-title">Check-out</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>14:00 - 22:00</p>
+                                            <p class="item-description">14:00 - 22:00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -193,10 +192,10 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Lưu trữ hành lí</b></strong></p>
+                                                <h3 class="item-title">Get baggage</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>14:00 - 22:00</p>
+                                            <p class="item-description">14:00 - 22:00</p>
                                         </div>
                                     </div>
                                 </div>
@@ -204,13 +203,14 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Hủy phòng/Trả trước</b></strong></p>
+                                                <h3 class="item-title">Cancellation / Prepayment</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>
-                                                Chính sách hủy bỏ và trả trước khác nhau tùy theo loại phòng.
-                                                Vui lòng nhập ngày lưu trú của bạn và kiểm tra các điều kiện của phòng
-                                                bạn yêu cầu.
+                                            <p class="item-description">
+                                                    Pork fillet, ginger, garlic, honey, pepper & canola oil.creamy chesapeake crab
+                                                    dip with artichoke, baked and topped with cheddar cheese, with crusty bread for
+                                                    dipping. creamy chesapeake crab dip with artichoke, baked and topped with
+                                                    cheddar cheese.
                                             </p>
                                         </div>
                                     </div>
@@ -219,12 +219,14 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Trẻ em và giường phụ</b></strong></p>
+                                                <h3 class="item-title">Cancellation / Prepayment</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>Tất cả trẻ em đều được chào đón.</p>
-                                            <p>Một trẻ em dưới 6 tuổi phải trả 200 mỗi đêm khi sử dụng giường hiện có</p>
-                                            <p>Không có sức chứa cho giường phụ trong phòng.</p>
+                                                <p class="item-description">
+                                                        All children are welcome.
+                                                        A child under 6 must pay 200 per night when using existing beds
+                                                        There is no capacity for extra beds in the room.
+                                                </p>
 
                                         </div>
                                     </div>
@@ -233,10 +235,10 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Thú cưng</b></strong></p>
+                                                <h3 class="item-title">Pets</h3>
                                         </div>
                                         <div class="col-md-8">
-                                            <p>Không được phép đem thú cưng trong resort</p>
+                                            <p class="item-description">Pets are not allowed in the resort</p>
                                         </div>
                                     </div>
                                 </div>
@@ -244,17 +246,13 @@
                                 <div class="box">
                                     <div class="row">
                                         <div class="col-md-4">
-                                            <p><strong><b>Thông tin bổ sung</b></strong></p>
+                                                <h3 class="item-title">Information</h3>
                                         </div>
                                         <div class="col-md-8">
-                                                <p>Nhà hàng sẽ đóng cửa trong dịp Giáng sinh (25-26/12).</p>
-                                                <p>Xin lưu ý rằng chỗ đậu xe không thể được bảo lưu hoặc đảm bảo.</p>
-                                                <p>
-                                                    Đối với đặt phòng theo nhóm hơn 5 phòng tối đa 4 tuần trước khi hủy đến
-                                                    là miễn phí 100%, trong vòng 2 đến 4 tuần miễn phí 50% và trong vòng 2
-                                                    tuần, resort sẽ tính phí đầy đủ cho bạn. Xin lưu ý rằng sesort luôn tính 
-                                                    thuế thành phố trước khi bạn đến với mức giá không hoàn
-                                                    lại hoặc đặt phòng theo nhóm.
+                                                <p class="item-description">
+                                                        The restaurant will be closed during Christmas (December 25-26).
+                                                        Please note that parking spaces cannot be reserved or guaranteed.
+                                                        For group bookings of more than 5 rooms up to 4 weeks before cancellation is 100% free, within 2 to 4 weeks free of 50% and within 2 weeks, the resort will charge you fully. Please note that sesort always charges a city tax before you arrive with a non-refundable price or group booking.
                                                 </p>
                                             </div>
                                         
@@ -262,10 +260,11 @@
                                 </div>
                             </div>
                             <!--NEAR BY-->
-                            <div class="room-block-1 near-by">
-                                <h2 class="title">
-                                    NEAR BY
-                                </h2>
+                            <div class="near-by">
+                                    <div class="sec-title m-0" style="padding: 80px 0 80px">
+                                            <p style="font-size: 40px">Near by</p>
+                                            <div class="sec-title-line"></div>
+                                        </div>
                             </div>
                             <div id="dichvu">
                                 <div class="container-nearby">
@@ -358,6 +357,23 @@
 
     imgLoveList.height(widthImg);
     $(".love-image-fade").height(widthImg);
+
+    function resizeBanner() {
+        var _window = $(window),
+            heightwindow = _window.height(),
+            heightHeader = $(".my-header").height();
+        $("#hotel-detail .banner").css('height', heightwindow - heightHeader);
+    }
+    
+    $(function(){
+       
+        
+        resizeBanner();
+    });
+
+    $(window).resize(function () {
+        resizeBanner();
+    });
 </script>
 
 </html>
