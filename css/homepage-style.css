@@ -14,6 +14,13 @@
 .menu-item {
     margin-right: 50px;
     font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+}
+
+.topbar-content .menu-item:hover{
+    color: #ddd;
+    text-decoration: none;
 }
 
 .menu-item:last-child {

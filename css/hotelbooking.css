@@ -359,3 +359,19 @@ h4.name
     line-height: 23px;
     color: #a5a5a5
 }
+
+/*HOTEL BOOKING BOX*/
+.hotel-booking-box{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    padding: 1.5rem;
+    background: #56317A;
+    color: #fff;
+    width: 300px;
+    border-radius: 3px;
+}
+
+.gj-icon{
+    color: #fff;
+}

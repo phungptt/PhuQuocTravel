@@ -8,12 +8,12 @@ Vue.component('my-header', {
                     <a href="homepage.html"><h4 class="text-white mb-0">Phú Quốc Travel</h4></a>
                 </div>
                 <div class="topbar-menu d-flex flex-row justify-content-end text-white align-items-center">
-                    <a href="#" class="menu-item">HOME</a>
+                    <a href="/" class="menu-item">HOME</a>
                     <a href="#" class="menu-item">TRIPS</a>
-                    <a href="#" class="menu-item">FOODS</a>
-                    <a href="#" class="menu-item">HOTEL</a>
+                    <a href="food-page.html" class="menu-item">FOODS</a>
+                    <a href="hotel-list.html" class="menu-item">HOTEL</a>
                     <a href="#" class="menu-item">CAR RENTALS</a>
-                    <a href="#" class="menu-item">PROFILE</a>
+                    <a href="user.html" class="menu-item">MY ACCOUNT</a>
                 </div>
             </div>
         </div>
@@ -124,7 +124,7 @@ Vue.component('list-hotel', {
                     </div>
                     <div class="intro-button style-intro-button mt-4">
                         <div class="button-bcg "></div>
-                        <a href="#">Xem thêm ...</a>
+                        <a href="hotelbooking.html">Xem thêm ...</a>
                     </div>
                 </div>
             </div>
@@ -186,7 +186,7 @@ Vue.component('list-hotel-page', {
                     </div>
                     <div class="intro-button style-intro-button mt-4">
                         <div class="button-bcg "></div>
-                        <a href="#">
+                        <a href="hotelbooking.html">
                             BOOK
                             <span></span>
                             <span></span>
